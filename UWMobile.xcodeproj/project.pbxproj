@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288B979BF1254A82B5088717 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F689589E4AF6409EA41E3B5C /* libPods.a */; };
 		41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
 		41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */; };
 		41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDC19B0251C00C7C2CE /* UIKit.framework */; };
 		41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FE119B0251C00C7C2CE /* InfoPlist.strings */; };
 		41B87FE519B0251C00C7C2CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE419B0251C00C7C2CE /* main.m */; };
 		41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE819B0251C00C7C2CE /* AppDelegate.m */; };
-		41B87FEC19B0251C00C7C2CE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */; };
+		41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FEA19B0251C00C7C2CE /* Main.storyboard */; };
 		41B87FF219B0251C00C7C2CE /* UWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FF119B0251C00C7C2CE /* UWViewController.m */; };
 		41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FF319B0251C00C7C2CE /* Images.xcassets */; };
 		41B87FFB19B0251C00C7C2CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FFA19B0251C00C7C2CE /* XCTest.framework */; };
@@ -44,7 +45,7 @@
 		41B87FE619B0251C00C7C2CE /* UWMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWMobile-Prefix.pch"; sourceTree = "<group>"; };
 		41B87FE719B0251C00C7C2CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41B87FE819B0251C00C7C2CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41B87FEB19B0251C00C7C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		41B87FEB19B0251C00C7C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41B87FF019B0251C00C7C2CE /* UWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWViewController.h; sourceTree = "<group>"; };
 		41B87FF119B0251C00C7C2CE /* UWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWViewController.m; sourceTree = "<group>"; };
 		41B87FF319B0251C00C7C2CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,8 @@
 		41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobileTests-Info.plist"; sourceTree = "<group>"; };
 		41B8800419B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41B8800619B0251C00C7C2CE /* UWMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWMobileTests.m; sourceTree = "<group>"; };
+		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */,
 				41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */,
 				41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */,
+				288B979BF1254A82B5088717 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 				41B8800019B0251C00C7C2CE /* UWMobileTests */,
 				41B87FD719B0251C00C7C2CE /* Frameworks */,
 				41B87FD619B0251C00C7C2CE /* Products */,
+				9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +110,7 @@
 				41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */,
 				41B87FDC19B0251C00C7C2CE /* UIKit.framework */,
 				41B87FFA19B0251C00C7C2CE /* XCTest.framework */,
+				F689589E4AF6409EA41E3B5C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,7 +120,7 @@
 			children = (
 				41B87FE719B0251C00C7C2CE /* AppDelegate.h */,
 				41B87FE819B0251C00C7C2CE /* AppDelegate.m */,
-				41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */,
+				41B87FEA19B0251C00C7C2CE /* Main.storyboard */,
 				41B87FF019B0251C00C7C2CE /* UWViewController.h */,
 				41B87FF119B0251C00C7C2CE /* UWViewController.m */,
 				41B87FF319B0251C00C7C2CE /* Images.xcassets */,
@@ -159,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobile" */;
 			buildPhases = (
+				DE314CBDBF884918B9C995B9 /* Check Pods Manifest.lock */,
 				41B87FD119B0251C00C7C2CE /* Sources */,
 				41B87FD219B0251C00C7C2CE /* Frameworks */,
 				41B87FD319B0251C00C7C2CE /* Resources */,
+				BB0D58C11AC84BB9BD567D9C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */,
-				41B87FEC19B0251C00C7C2CE /* Main_iPhone.storyboard in Resources */,
+				41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */,
 				41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +252,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB0D58C11AC84BB9BD567D9C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE314CBDBF884918B9C995B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41B87FD119B0251C00C7C2CE /* Sources */ = {
@@ -283,12 +324,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */ = {
+		41B87FEA19B0251C00C7C2CE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				41B87FEB19B0251C00C7C2CE /* Base */,
 			);
-			name = Main_iPhone.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		41B8800319B0251C00C7C2CE /* InfoPlist.strings */ = {
@@ -376,6 +417,7 @@
 		};
 		41B8800B19B0251C00C7C2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -390,6 +432,7 @@
 		};
 		41B8800C19B0251C00C7C2CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +504,7 @@
 				41B8800C19B0251C00C7C2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +513,7 @@
 				41B8800F19B0251C00C7C2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
