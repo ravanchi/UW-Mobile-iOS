@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
+		41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */; };
+		41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDC19B0251C00C7C2CE /* UIKit.framework */; };
+		41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FE119B0251C00C7C2CE /* InfoPlist.strings */; };
+		41B87FE519B0251C00C7C2CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE419B0251C00C7C2CE /* main.m */; };
+		41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE819B0251C00C7C2CE /* AppDelegate.m */; };
+		41B87FEC19B0251C00C7C2CE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */; };
+		41B87FF219B0251C00C7C2CE /* UWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FF119B0251C00C7C2CE /* UWViewController.m */; };
+		41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FF319B0251C00C7C2CE /* Images.xcassets */; };
+		41B87FFB19B0251C00C7C2CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FFA19B0251C00C7C2CE /* XCTest.framework */; };
+		41B87FFC19B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
+		41B87FFD19B0251C00C7C2CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDC19B0251C00C7C2CE /* UIKit.framework */; };
+		41B8800519B0251C00C7C2CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41B8800319B0251C00C7C2CE /* InfoPlist.strings */; };
+		41B8800719B0251C00C7C2CE /* UWMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8800619B0251C00C7C2CE /* UWMobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41B87FFE19B0251C00C7C2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B87FCD19B0251C00C7C2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41B87FD419B0251C00C7C2CE;
+			remoteInfo = UWMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41B87FD519B0251C00C7C2CE /* UWMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B87FD819B0251C00C7C2CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		41B87FDC19B0251C00C7C2CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobile-Info.plist"; sourceTree = "<group>"; };
+		41B87FE219B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41B87FE419B0251C00C7C2CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41B87FE619B0251C00C7C2CE /* UWMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWMobile-Prefix.pch"; sourceTree = "<group>"; };
+		41B87FE719B0251C00C7C2CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41B87FE819B0251C00C7C2CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41B87FEB19B0251C00C7C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		41B87FF019B0251C00C7C2CE /* UWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWViewController.h; sourceTree = "<group>"; };
+		41B87FF119B0251C00C7C2CE /* UWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWViewController.m; sourceTree = "<group>"; };
+		41B87FF319B0251C00C7C2CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B87FFA19B0251C00C7C2CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobileTests-Info.plist"; sourceTree = "<group>"; };
+		41B8800419B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41B8800619B0251C00C7C2CE /* UWMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWMobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41B87FD219B0251C00C7C2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */,
+				41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */,
+				41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B87FF619B0251C00C7C2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B87FFB19B0251C00C7C2CE /* XCTest.framework in Frameworks */,
+				41B87FFD19B0251C00C7C2CE /* UIKit.framework in Frameworks */,
+				41B87FFC19B0251C00C7C2CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41B87FCC19B0251C00C7C2CE = {
+			isa = PBXGroup;
+			children = (
+				41B87FDE19B0251C00C7C2CE /* UWMobile */,
+				41B8800019B0251C00C7C2CE /* UWMobileTests */,
+				41B87FD719B0251C00C7C2CE /* Frameworks */,
+				41B87FD619B0251C00C7C2CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41B87FD619B0251C00C7C2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B87FD519B0251C00C7C2CE /* UWMobile.app */,
+				41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B87FD719B0251C00C7C2CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B87FD819B0251C00C7C2CE /* Foundation.framework */,
+				41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */,
+				41B87FDC19B0251C00C7C2CE /* UIKit.framework */,
+				41B87FFA19B0251C00C7C2CE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B87FDE19B0251C00C7C2CE /* UWMobile */ = {
+			isa = PBXGroup;
+			children = (
+				41B87FE719B0251C00C7C2CE /* AppDelegate.h */,
+				41B87FE819B0251C00C7C2CE /* AppDelegate.m */,
+				41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */,
+				41B87FF019B0251C00C7C2CE /* UWViewController.h */,
+				41B87FF119B0251C00C7C2CE /* UWViewController.m */,
+				41B87FF319B0251C00C7C2CE /* Images.xcassets */,
+				41B87FDF19B0251C00C7C2CE /* Supporting Files */,
+			);
+			path = UWMobile;
+			sourceTree = "<group>";
+		};
+		41B87FDF19B0251C00C7C2CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */,
+				41B87FE119B0251C00C7C2CE /* InfoPlist.strings */,
+				41B87FE419B0251C00C7C2CE /* main.m */,
+				41B87FE619B0251C00C7C2CE /* UWMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41B8800019B0251C00C7C2CE /* UWMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				41B8800619B0251C00C7C2CE /* UWMobileTests.m */,
+				41B8800119B0251C00C7C2CE /* Supporting Files */,
+			);
+			path = UWMobileTests;
+			sourceTree = "<group>";
+		};
+		41B8800119B0251C00C7C2CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */,
+				41B8800319B0251C00C7C2CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41B87FD419B0251C00C7C2CE /* UWMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobile" */;
+			buildPhases = (
+				41B87FD119B0251C00C7C2CE /* Sources */,
+				41B87FD219B0251C00C7C2CE /* Frameworks */,
+				41B87FD319B0251C00C7C2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UWMobile;
+			productName = UWMobile;
+			productReference = 41B87FD519B0251C00C7C2CE /* UWMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41B87FF819B0251C00C7C2CE /* UWMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobileTests" */;
+			buildPhases = (
+				41B87FF519B0251C00C7C2CE /* Sources */,
+				41B87FF619B0251C00C7C2CE /* Frameworks */,
+				41B87FF719B0251C00C7C2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41B87FFF19B0251C00C7C2CE /* PBXTargetDependency */,
+			);
+			name = UWMobileTests;
+			productName = UWMobileTests;
+			productReference = 41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41B87FCD19B0251C00C7C2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ali Ravanchi";
+				TargetAttributes = {
+					41B87FF819B0251C00C7C2CE = {
+						TestTargetID = 41B87FD419B0251C00C7C2CE;
+					};
+				};
+			};
+			buildConfigurationList = 41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UWMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41B87FCC19B0251C00C7C2CE;
+			productRefGroup = 41B87FD619B0251C00C7C2CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41B87FD419B0251C00C7C2CE /* UWMobile */,
+				41B87FF819B0251C00C7C2CE /* UWMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41B87FD319B0251C00C7C2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */,
+				41B87FEC19B0251C00C7C2CE /* Main_iPhone.storyboard in Resources */,
+				41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B87FF719B0251C00C7C2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B8800519B0251C00C7C2CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B87FD119B0251C00C7C2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */,
+				41B87FF219B0251C00C7C2CE /* UWViewController.m in Sources */,
+				41B87FE519B0251C00C7C2CE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B87FF519B0251C00C7C2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B8800719B0251C00C7C2CE /* UWMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41B87FFF19B0251C00C7C2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41B87FD419B0251C00C7C2CE /* UWMobile */;
+			targetProxy = 41B87FFE19B0251C00C7C2CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41B87FE119B0251C00C7C2CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B87FE219B0251C00C7C2CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		41B87FEA19B0251C00C7C2CE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B87FEB19B0251C00C7C2CE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		41B8800319B0251C00C7C2CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B8800419B0251C00C7C2CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41B8800819B0251C00C7C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41B8800919B0251C00C7C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41B8800B19B0251C00C7C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
+				INFOPLIST_FILE = "UWMobile/UWMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		41B8800C19B0251C00C7C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
+				INFOPLIST_FILE = "UWMobile/UWMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		41B8800E19B0251C00C7C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UWMobile.app/UWMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UWMobileTests/UWMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		41B8800F19B0251C00C7C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UWMobile.app/UWMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
+				INFOPLIST_FILE = "UWMobileTests/UWMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UWMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B8800819B0251C00C7C2CE /* Debug */,
+				41B8800919B0251C00C7C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B8800B19B0251C00C7C2CE /* Debug */,
+				41B8800C19B0251C00C7C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B8800E19B0251C00C7C2CE /* Debug */,
+				41B8800F19B0251C00C7C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41B87FCD19B0251C00C7C2CE /* Project object */;
+}
