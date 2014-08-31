@@ -19,8 +19,11 @@
                                                                     leftMenuViewController:leftMenuViewController
                                                                    rightMenuViewController:nil];
 
-    self.view.window.rootViewController = sideMenuViewController;
     sideMenuViewController.view.backgroundColor = [UIColor whiteColor];
+    sideMenuViewController.contentViewInPortraitOffsetCenterX = 50;
+    sideMenuViewController.contentViewScaleValue = 0.8;
+    sideMenuViewController.interactivePopGestureRecognizerEnabled = NO;
+    self.view.window.rootViewController = sideMenuViewController;
 }
 
 @end
