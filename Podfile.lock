@@ -23,13 +23,16 @@ PODS:
   - Mantle (1.5):
     - Mantle/extobjc
   - Mantle/extobjc (1.5)
+  - RESideMenu (4.0.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2)
   - Mantle (~> 1.5)
+  - RESideMenu (~> 4.0.6)
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
+  RESideMenu: 1d9293d36a2b23cac86c86033b80ee06c7dc9e71
 
 COCOAPODS: 0.33.1

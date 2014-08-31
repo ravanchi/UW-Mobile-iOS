@@ -20,12 +20,10 @@
 }
 
 + (NSValueTransformer *)linkJSONTransformer {
-    // use Mantle's built-in "value transformer" to convert strings to NSURL and vice-versa
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
 + (NSValueTransformer *)timesJSONTransformer {
-    // tell Mantle to populate times property with an array of UWEventTimes objects
     return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[UWEventTimes class]];
 }
 
