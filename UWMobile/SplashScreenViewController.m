@@ -20,7 +20,7 @@
                                                                    rightMenuViewController:nil];
 
     self.view.window.rootViewController = sideMenuViewController;
-    
+    sideMenuViewController.view.backgroundColor = [UIColor whiteColor];
 }
 
 @end

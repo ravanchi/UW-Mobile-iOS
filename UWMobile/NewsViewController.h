@@ -1,3 +1,5 @@
-@interface NewsViewController : UIViewController
+#import "BaseViewController.h"
+
+@interface NewsViewController : BaseViewController
 
 @end

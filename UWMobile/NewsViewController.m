@@ -5,7 +5,7 @@
 
 static NSString *const kNewsTitle = @"News";
 
-@interface NewsViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface NewsViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) AppDelegate *appDelegate;
 
@@ -36,5 +36,13 @@ static NSString *const kNewsTitle = @"News";
     return cell;
 }
 
+#pragma mark - <UICollectionViewDelegateFlowLayout>
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UWNews *news = self.appDelegate.news[indexPath.row];
+    return CGSizeMake(320, [NewsCell heightWithNews:news]);
+}
 
 @end

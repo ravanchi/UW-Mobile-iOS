@@ -1,0 +1,3 @@
+@interface ThinHorizontalLineView : UIView
+
+@end
