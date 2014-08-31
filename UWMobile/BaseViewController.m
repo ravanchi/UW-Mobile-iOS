@@ -9,9 +9,9 @@
 
 - (void)viewDidLoad {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_bar_icon_menu"]
-                                                                                                                     style:UIBarButtonItemStylePlain
-                                                                                                                    target:self
-                                                                                                                    action:@selector(presentLeftMenuViewController:)];
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(presentLeftMenuViewController:)];
 }
 
 @end

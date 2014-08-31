@@ -33,6 +33,9 @@
 		41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8805919B2F03200C7C2CE /* LeftMenuViewController.m */; };
 		41B8805D19B2FFF700C7C2CE /* ThinHorizontalLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8805C19B2FFF700C7C2CE /* ThinHorizontalLineView.m */; };
 		41B8806019B30B2700C7C2CE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8805F19B30B2700C7C2CE /* BaseViewController.m */; };
+		41B8806319B3119400C7C2CE /* UWSideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806219B3119400C7C2CE /* UWSideMenuItem.m */; };
+		41B8806619B314AD00C7C2CE /* SideMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806519B314AD00C7C2CE /* SideMenuItemCell.m */; };
+		41B8806919B31A5000C7C2CE /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806819B31A5000C7C2CE /* EventsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,12 @@
 		41B8805C19B2FFF700C7C2CE /* ThinHorizontalLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinHorizontalLineView.m; sourceTree = "<group>"; };
 		41B8805E19B30B2700C7C2CE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		41B8805F19B30B2700C7C2CE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		41B8806119B3119400C7C2CE /* UWSideMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWSideMenuItem.h; sourceTree = "<group>"; };
+		41B8806219B3119400C7C2CE /* UWSideMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWSideMenuItem.m; sourceTree = "<group>"; };
+		41B8806419B314AD00C7C2CE /* SideMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuItemCell.h; sourceTree = "<group>"; };
+		41B8806519B314AD00C7C2CE /* SideMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuItemCell.m; sourceTree = "<group>"; };
+		41B8806719B31A5000C7C2CE /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		41B8806819B31A5000C7C2CE /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -207,12 +216,14 @@
 			isa = PBXGroup;
 			children = (
 				41B8801619B0A8C600C7C2CE /* UWModel.h */,
+				41B8802719B2D80500C7C2CE /* UWNews.h */,
+				41B8802819B2D80500C7C2CE /* UWNews.m */,
 				41B8801919B0A96600C7C2CE /* UWEvent.h */,
 				41B8801A19B0A96600C7C2CE /* UWEvent.m */,
 				41B8801C19B27C4B00C7C2CE /* UWEventTimes.h */,
 				41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */,
-				41B8802719B2D80500C7C2CE /* UWNews.h */,
-				41B8802819B2D80500C7C2CE /* UWNews.m */,
+				41B8806119B3119400C7C2CE /* UWSideMenuItem.h */,
+				41B8806219B3119400C7C2CE /* UWSideMenuItem.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -220,14 +231,16 @@
 		41B8802219B2CFDB00C7C2CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				41B87FF019B0251C00C7C2CE /* NewsViewController.h */,
-				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
+				41B8805E19B30B2700C7C2CE /* BaseViewController.h */,
+				41B8805F19B30B2700C7C2CE /* BaseViewController.m */,
 				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
 				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
 				41B8805819B2F03200C7C2CE /* LeftMenuViewController.h */,
 				41B8805919B2F03200C7C2CE /* LeftMenuViewController.m */,
-				41B8805E19B30B2700C7C2CE /* BaseViewController.h */,
-				41B8805F19B30B2700C7C2CE /* BaseViewController.m */,
+				41B87FF019B0251C00C7C2CE /* NewsViewController.h */,
+				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
+				41B8806719B31A5000C7C2CE /* EventsViewController.h */,
+				41B8806819B31A5000C7C2CE /* EventsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +252,8 @@
 				41B8802519B2D38C00C7C2CE /* NewsCell.m */,
 				41B8805B19B2FFF700C7C2CE /* ThinHorizontalLineView.h */,
 				41B8805C19B2FFF700C7C2CE /* ThinHorizontalLineView.m */,
+				41B8806419B314AD00C7C2CE /* SideMenuItemCell.h */,
+				41B8806519B314AD00C7C2CE /* SideMenuItemCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -378,9 +393,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B8806619B314AD00C7C2CE /* SideMenuItemCell.m in Sources */,
+				41B8806919B31A5000C7C2CE /* EventsViewController.m in Sources */,
 				41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */,
 				41B8806019B30B2700C7C2CE /* BaseViewController.m in Sources */,
 				41B8802C19B2DA5D00C7C2CE /* DateProvider.m in Sources */,
+				41B8806319B3119400C7C2CE /* UWSideMenuItem.m in Sources */,
 				41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */,
 				41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */,
 				41B8802619B2D38C00C7C2CE /* NewsCell.m in Sources */,

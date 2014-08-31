@@ -5,7 +5,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"startTime" : @"start",
-             @"endTime" : @"end"};
+             @"endTime"   : @"end"};
 }
 
 - (id<NSCopying>)uniqueKey {

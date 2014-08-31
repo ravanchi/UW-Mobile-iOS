@@ -3,7 +3,6 @@
 @interface ThinHorizontalLineView()
 
 @property (nonatomic, strong) UIColor *thinBackgroundColor;
-@property BOOL bottom;
 
 @end
 
@@ -17,8 +16,7 @@
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, self.thinBackgroundColor.CGColor);
-    CGFloat y = self.bottom ? rect.origin.y + 0.5f : rect.origin.y;
-    CGContextFillRect(context, CGRectMake(rect.origin.x, y, rect.size.width, 0.5f));
+    CGContextFillRect(context, CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, 0.5f));
 }
 
 

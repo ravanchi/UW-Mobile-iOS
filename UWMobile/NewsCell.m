@@ -9,8 +9,8 @@
 
 @interface NewsCell()
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
 
 @end
 
@@ -21,9 +21,9 @@
                                  NSForegroundColorAttributeName : [UIColor whiteColor]};
     
     CGRect boundingRect = [news.title boundingRectWithSize:CGSizeMake(kMaxWidth, 8000)
-                                                                 options:NSStringDrawingUsesLineFragmentOrigin
-                                                              attributes:attributes
-                                                                 context:NULL];
+                                                   options:NSStringDrawingUsesLineFragmentOrigin
+                                                attributes:attributes
+                                                   context:NULL];
     
     return TotalTopAndBottomPadding + TimeTopSpace + 12 + 17 + boundingRect.size.height;
 }

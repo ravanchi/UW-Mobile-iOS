@@ -42,7 +42,7 @@ static NSString *const kNewsTitle = @"News";
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     UWNews *news = self.appDelegate.news[indexPath.row];
-    return CGSizeMake(320, [NewsCell heightWithNews:news]);
+    return CGSizeMake(CGRectGetWidth(collectionView.frame), [NewsCell heightWithNews:news]);
 }
 
 @end

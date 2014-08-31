@@ -6,13 +6,13 @@
 @implementation UWEvent
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{@"eventID" : @"id",
-             @"site" : @"site",
+    return @{@"eventID"  : @"id",
+             @"site"     : @"site",
              @"siteName" : @"site_name",
-             @"title" : @"title",
-             @"times" : @"times",
-             @"link" : @"link",
-             @"updated" : @"updated"};
+             @"title"    : @"title",
+             @"times"    : @"times",
+             @"link"     : @"link",
+             @"updated"  : @"updated"};
 }
 
 - (id<NSCopying>)uniqueKey {
