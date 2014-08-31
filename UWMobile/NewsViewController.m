@@ -1,6 +1,9 @@
 #import "NewsViewController.h"
+#import "NewsCell.h"
 
 #import "AppDelegate.h"
+
+static NSString *const kNewsTitle = @"News";
 
 @interface NewsViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -13,18 +16,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = kNewsTitle;
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.appDelegate.events count];
+    return [self.appDelegate.news count];
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UICollectionViewCell *cell;
+    cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([NewsCell class])
+                                                     forIndexPath:indexPath];
+
+    [(NewsCell *)cell configureWithNews:self.appDelegate.news[indexPath.row]];
+
     return cell;
 }
 

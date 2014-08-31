@@ -4,11 +4,13 @@
 #import <MTLJSONAdapter.h>
 #import "UWEvent.h"
 #import "UWEventTimes.h"
+#import "UWNews.h"
 
 #import "SplashScreenViewController.h"
 
 const NSString *apiKey = @"624b3a3eab10f59832f55b39f6900947";
 const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
+const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
 
 @interface AppDelegate()
 
@@ -21,7 +23,7 @@ const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.splashScreen = (SplashScreenViewController *)self.window.rootViewController;
-    [self fetchCurrentEvents];
+    [self fetchNews];
     return YES;
 }
 
@@ -56,7 +58,7 @@ const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@",eventsUrl, apiKey];
+    NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@", eventsUrl, apiKey];
     
     [manager GET:eventsStringUrl
       parameters:nil
@@ -71,11 +73,36 @@ const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
              if (error) {
                  NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
              }
-             else {
-                 NSLog(@"%@", ((UWEvent *)eventData.firstObject));
-             }
              
              self.events = eventData;
+             [self.splashScreen proceedToHomeViewController];
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
+}
+
+- (void)fetchNews
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *newsStringUrl = [NSString stringWithFormat:@"%@?key=%@", newsUrl, apiKey];
+    
+    [manager GET:newsStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSArray *newsJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *newsData = [MTLJSONAdapter modelsOfClass:[UWNews class] fromJSONArray:newsJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
+             }
+             
+             self.news = newsData;
              [self.splashScreen proceedToHomeViewController];
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {

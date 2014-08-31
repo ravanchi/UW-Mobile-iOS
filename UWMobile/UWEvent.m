@@ -1,6 +1,8 @@
 #import "UWEvent.h"
 #import "UWEventTimes.h"
 
+#import "DateProvider.h"
+
 @implementation UWEvent
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
@@ -17,18 +19,6 @@
     return self.eventID;
 }
 
-+ (NSDateFormatter *)dateFormatter {
-    static NSDateFormatter *dateFormatter;
-    static dispatch_once_t token;
-    
-    dispatch_once(&token, ^{
-        dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
-    });
-    
-    return dateFormatter;
-}
-
 + (NSValueTransformer *)linkJSONTransformer {
     // use Mantle's built-in "value transformer" to convert strings to NSURL and vice-versa
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
@@ -41,9 +31,9 @@
 
 + (NSValueTransformer *)updatedJSONTransformer {
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *dateTimeString) {
-        return [[self dateFormatter] dateFromString:dateTimeString];
+        return [[DateProvider dateFormatter] dateFromString:dateTimeString];
     } reverseBlock:^id(NSDate *dateTime) {
-        return [[self dateFormatter] stringFromDate:dateTime];
+        return [[DateProvider dateFormatter] stringFromDate:dateTime];
     }];
 }
 

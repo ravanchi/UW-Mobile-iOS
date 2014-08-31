@@ -27,6 +27,9 @@
 		41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8801A19B0A96600C7C2CE /* UWEvent.m */; };
 		41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */; };
 		41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */; };
+		41B8802619B2D38C00C7C2CE /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802519B2D38C00C7C2CE /* NewsCell.m */; };
+		41B8802919B2D80500C7C2CE /* UWNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802819B2D80500C7C2CE /* UWNews.m */; };
+		41B8802C19B2DA5D00C7C2CE /* DateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802B19B2DA5D00C7C2CE /* DateProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,12 @@
 		41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWEventTimes.m; sourceTree = "<group>"; };
 		41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
 		41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+		41B8802419B2D38C00C7C2CE /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		41B8802519B2D38C00C7C2CE /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		41B8802719B2D80500C7C2CE /* UWNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWNews.h; sourceTree = "<group>"; };
+		41B8802819B2D80500C7C2CE /* UWNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWNews.m; sourceTree = "<group>"; };
+		41B8802A19B2DA5D00C7C2CE /* DateProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateProvider.h; sourceTree = "<group>"; };
+		41B8802B19B2DA5D00C7C2CE /* DateProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateProvider.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,15 +141,14 @@
 		41B87FDE19B0251C00C7C2CE /* UWMobile */ = {
 			isa = PBXGroup;
 			children = (
-				41B8802219B2CFDB00C7C2CE /* Controllers */,
 				41B8801519B0A8AD00C7C2CE /* Models */,
+				41B8802319B2D10F00C7C2CE /* Views */,
+				41B8802219B2CFDB00C7C2CE /* Controllers */,
 				41B87FE719B0251C00C7C2CE /* AppDelegate.h */,
 				41B87FE819B0251C00C7C2CE /* AppDelegate.m */,
 				41B87FEA19B0251C00C7C2CE /* Main.storyboard */,
-				41B87FF019B0251C00C7C2CE /* NewsViewController.h */,
-				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
-				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
-				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
+				41B8802A19B2DA5D00C7C2CE /* DateProvider.h */,
+				41B8802B19B2DA5D00C7C2CE /* DateProvider.m */,
 				41B87FF319B0251C00C7C2CE /* Images.xcassets */,
 				41B87FDF19B0251C00C7C2CE /* Supporting Files */,
 			);
@@ -194,6 +202,8 @@
 				41B8801A19B0A96600C7C2CE /* UWEvent.m */,
 				41B8801C19B27C4B00C7C2CE /* UWEventTimes.h */,
 				41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */,
+				41B8802719B2D80500C7C2CE /* UWNews.h */,
+				41B8802819B2D80500C7C2CE /* UWNews.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -201,8 +211,21 @@
 		41B8802219B2CFDB00C7C2CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41B87FF019B0251C00C7C2CE /* NewsViewController.h */,
+				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
+				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
+				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		41B8802319B2D10F00C7C2CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41B8802419B2D38C00C7C2CE /* NewsCell.h */,
+				41B8802519B2D38C00C7C2CE /* NewsCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,8 +364,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */,
+				41B8802C19B2DA5D00C7C2CE /* DateProvider.m in Sources */,
 				41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */,
 				41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */,
+				41B8802619B2D38C00C7C2CE /* NewsCell.m in Sources */,
+				41B8802919B2D80500C7C2CE /* UWNews.m in Sources */,
 				41B87FE519B0251C00C7C2CE /* main.m in Sources */,
 				41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */,
 				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,
