@@ -1,13 +1,30 @@
 #import "AppDelegate.h"
 
+#import <AFHTTPRequestOperationManager.h>
+#import <MTLJSONAdapter.h>
+#import "UWEvent.h"
+#import "UWEventTimes.h"
+
+#import "SplashScreenViewController.h"
+
+const NSString *apiKey = @"624b3a3eab10f59832f55b39f6900947";
+const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
+
+@interface AppDelegate()
+
+@property (nonatomic, strong) SplashScreenViewController *splashScreen;
+
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.splashScreen = (SplashScreenViewController *)self.window.rootViewController;
+    [self fetchCurrentEvents];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -23,8 +40,6 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    
-#warning TODO: Fetch for news, events
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -35,6 +50,37 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)fetchCurrentEvents
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@",eventsUrl, apiKey];
+    
+    [manager GET:eventsStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSArray *eventsJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *eventData = [MTLJSONAdapter modelsOfClass:[UWEvent class] fromJSONArray:eventsJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
+             }
+             else {
+                 NSLog(@"%@", ((UWEvent *)eventData.firstObject));
+             }
+             
+             self.events = eventData;
+             [self.splashScreen proceedToHomeViewController];
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
 }
 
 @end

@@ -1,0 +1,3 @@
+@interface NewsViewController : UIViewController
+
+@end

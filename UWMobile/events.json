@@ -1,0 +1,1939 @@
+{
+    "meta": {
+        "requests": 5919,
+        "timestamp": 1409287711,
+        "status": 200,
+        "message": "Request successful",
+        "method_id": 1693,
+        "method": {}
+    },
+    "data": [
+             {
+             "id": 1396,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started With LEARN (CTE656)",
+             "times": [
+                       {
+                       "start": "2014-08-28T10:00:00-04:00",
+                       "end": "2014-08-28T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-cte656-8",
+             "updated": "2014-06-27T15:48:33-04:00"
+             },
+             {
+             "id": 1317,
+             "site": "arts",
+             "site_name": "Arts",
+             "title": "Orientation Week",
+             "times": [
+                       {
+                       "start": "2014-08-31T00:00:00-04:00",
+                       "end": "2014-09-06T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Information session",
+                      "Performance"
+                      ],
+             "link": "https://uwaterloo.ca/arts/events/orientation-week",
+             "updated": "2014-08-20T09:34:15-04:00"
+             },
+             {
+             "id": 2485,
+             "site": "alumni",
+             "site_name": "Alumni",
+             "title": "Young Alumni at Family Welcome",
+             "times": [
+                       {
+                       "start": "2014-08-31T08:30:00-04:00",
+                       "end": "2014-09-01T14:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house",
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/alumni/events/young-alumni-family-welcome",
+             "updated": "2014-08-08T14:40:22-04:00"
+             },
+             {
+             "id": 585,
+             "site": "optometry-vision-science",
+             "site_name": "Optometry &amp; Vision Science",
+             "title": "Student Welcome Week 2014",
+             "times": [
+                       {
+                       "start": "2014-09-02T00:00:00-04:00",
+                       "end": "2014-09-06T00:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/optometry-vision-science/events/student-welcome-week-2014",
+             "updated": "2014-05-27T14:51:28-04:00"
+             },
+             {
+             "id": 1052,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Faculty Welcome",
+             "times": [
+                       {
+                       "start": "2014-09-02T09:00:00-04:00",
+                       "end": "2014-09-02T10:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-faculty-welcome",
+             "updated": "2014-08-13T09:12:08-04:00"
+             },
+             {
+             "id": 1549,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-02T09:30:00-04:00",
+                       "end": "2014-09-02T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-119",
+             "updated": "2014-08-14T15:54:32-04:00"
+             },
+             {
+             "id": 1053,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Academic Sessions",
+             "times": [
+                       {
+                       "start": "2014-09-02T10:00:00-04:00",
+                       "end": "2014-09-02T13:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-academic-sessions",
+             "updated": "2014-08-13T09:18:07-04:00"
+             },
+             {
+             "id": 1054,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Single &amp; Sexy",
+             "times": [
+                       {
+                       "start": "2014-09-02T13:00:00-04:00",
+                       "end": "2014-09-02T14:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-single-sexy",
+             "updated": "2014-08-13T09:17:12-04:00"
+             },
+             {
+             "id": 1055,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Oh the places ENV will go!",
+             "times": [
+                       {
+                       "start": "2014-09-02T14:30:00-04:00",
+                       "end": "2014-09-02T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-oh-places-env-will-go",
+             "updated": "2014-08-13T09:20:11-04:00"
+             },
+             {
+             "id": 177,
+             "site": "watport",
+             "site_name": "WatPort",
+             "title": "New Faculty September Welcoming Events",
+             "times": [
+                       {
+                       "start": "2014-09-03T00:00:00-04:00",
+                       "end": "2014-09-03T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Information session"
+                      ],
+             "link": "https://uwaterloo.ca/watport/events/new-faculty-september-welcoming-events-0",
+             "updated": "2014-08-14T15:44:23-04:00"
+             },
+             {
+             "id": 317,
+             "site": "management-sciences",
+             "site_name": "Management Sciences",
+             "title": "Fall ExpecTAtions",
+             "times": [
+                       {
+                       "start": "2014-09-03T04:00:00-04:00",
+                       "end": "2014-09-03T04:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/management-sciences/events/fall-expectations",
+             "updated": "2014-07-09T11:21:46-04:00"
+             },
+             {
+             "id": 1056,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Bomber Breakfast",
+             "times": [
+                       {
+                       "start": "2014-09-03T09:00:00-04:00",
+                       "end": "2014-09-03T10:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-bomber-breakfast",
+             "updated": "2014-08-13T09:30:55-04:00"
+             },
+             {
+             "id": 1057,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Aerial Photo",
+             "times": [
+                       {
+                       "start": "2014-09-03T10:00:00-04:00",
+                       "end": "2014-09-03T11:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-aerial-photo",
+             "updated": "2014-08-13T09:32:24-04:00"
+             },
+             {
+             "id": 1058,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Waterloo Park",
+             "times": [
+                       {
+                       "start": "2014-09-03T11:30:00-04:00",
+                       "end": "2014-09-03T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-waterloo-park",
+             "updated": "2014-08-13T09:33:46-04:00"
+             },
+             {
+             "id": 618,
+             "site": "stratford-campus",
+             "site_name": "Stratford Campus",
+             "title": "Stratford Campus Orientation for GBDA Students",
+             "times": [
+                       {
+                       "start": "2014-09-04T09:00:00-04:00",
+                       "end": "2014-09-04T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/stratford-campus/events/stratford-campus-orientation-gbda-students",
+             "updated": "2014-07-29T11:43:45-04:00"
+             },
+             {
+             "id": 1548,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-04T14:00:00-04:00",
+                       "end": "2014-09-04T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-118",
+             "updated": "2014-08-14T15:53:49-04:00"
+             },
+             {
+             "id": 1419,
+             "site": "institute-for-quantum-computing",
+             "site_name": "Institute for Quantum Computing",
+             "title": "Chang Liu: Generation and application of narrow-band biphotons in cold atom ensembles",
+             "times": [
+                       {
+                       "start": "2014-09-04T14:00:00-04:00",
+                       "end": "2014-09-04T15:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/institute-for-quantum-computing/events/chang-liu-generation-and-application-narrow-band-biphotons",
+             "updated": "2014-08-15T12:20:27-04:00"
+             },
+             {
+             "id": 1420,
+             "site": "institute-for-quantum-computing",
+             "site_name": "Institute for Quantum Computing",
+             "title": "Chang Liu: Generation and application of narrow-band biphotons in cold atom ensembles",
+             "times": [
+                       {
+                       "start": "2014-09-04T14:00:00-04:00",
+                       "end": "2014-09-04T15:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/institute-for-quantum-computing/events/chang-liu-generation-and-application-narrow-band-biphotons-0",
+             "updated": "2014-08-15T13:45:53-04:00"
+             },
+             {
+             "id": 120,
+             "site": "counselling-services",
+             "site_name": "Counselling Services",
+             "title": "Graduate Student Therapy Group",
+             "times": [
+                       {
+                       "start": "2014-09-04T14:00:00-04:00",
+                       "end": "2014-09-04T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-11T14:00:00-04:00",
+                       "end": "2014-09-11T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-18T14:00:00-04:00",
+                       "end": "2014-09-18T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-25T14:00:00-04:00",
+                       "end": "2014-09-25T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-02T14:00:00-04:00",
+                       "end": "2014-10-02T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-09T14:00:00-04:00",
+                       "end": "2014-10-09T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-16T14:00:00-04:00",
+                       "end": "2014-10-16T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-23T14:00:00-04:00",
+                       "end": "2014-10-23T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-30T14:00:00-04:00",
+                       "end": "2014-10-30T14:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-06T15:00:00-05:00",
+                       "end": "2014-11-06T15:00:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-13T15:00:00-05:00",
+                       "end": "2014-11-13T15:00:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-20T15:00:00-05:00",
+                       "end": "2014-11-20T15:00:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-27T15:00:00-05:00",
+                       "end": "2014-11-27T15:00:00-05:00"
+                       },
+                       {
+                       "start": "2014-12-04T15:00:00-05:00",
+                       "end": "2014-12-04T15:00:00-05:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/counselling-services/events/graduate-student-therapy-group",
+             "updated": "2014-08-14T16:18:29-04:00"
+             },
+             {
+             "id": 313,
+             "site": "management-sciences",
+             "site_name": "Management Sciences",
+             "title": "Orientation for New Graduate Students",
+             "times": [
+                       {
+                       "start": "2014-09-05T10:00:00-04:00",
+                       "end": "2014-09-05T14:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Information session"
+                      ],
+             "link": "https://uwaterloo.ca/management-sciences/events/orientation-new-graduate-students",
+             "updated": "2014-06-25T13:47:10-04:00"
+             },
+             {
+             "id": 231,
+             "site": "management-sciences",
+             "site_name": "Management Sciences",
+             "title": "Welcome Reception/ Orientation for Graduate Students in Management Sciences",
+             "times": [
+                       {
+                       "start": "2014-09-05T10:30:00-04:00",
+                       "end": "2014-09-05T13:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/management-sciences/events/welcome-reception-orientation-graduate-students-management",
+             "updated": "2014-07-11T11:43:38-04:00"
+             },
+             {
+             "id": 880,
+             "site": "psychology",
+             "site_name": "Psychology",
+             "title": "PhD Oral Defence - Crystal Tse",
+             "times": [
+                       {
+                       "start": "2014-09-05T11:00:00-04:00",
+                       "end": "2014-09-05T11:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/psychology/events/phd-oral-defence-crystal-tse",
+             "updated": "2014-07-29T13:07:23-04:00"
+             },
+             {
+             "id": 1397,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started With LEARN (CTE656)",
+             "times": [
+                       {
+                       "start": "2014-09-05T13:00:00-04:00",
+                       "end": "2014-09-05T15:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-cte656-9",
+             "updated": "2014-06-27T15:56:56-04:00"
+             },
+             {
+             "id": 1059,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Environment Goes Wild",
+             "times": [
+                       {
+                       "start": "2014-09-05T19:00:00-04:00",
+                       "end": "2014-09-05T22:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-environment-goes-wild",
+             "updated": "2014-08-13T09:35:21-04:00"
+             },
+             {
+             "id": 1060,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Orientation Week - Environment Bonfire",
+             "times": [
+                       {
+                       "start": "2014-09-05T22:00:00-04:00",
+                       "end": "2014-09-06T00:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/orientation-week-environment-bonfire",
+             "updated": "2014-08-13T09:36:57-04:00"
+             },
+             {
+             "id": 429,
+             "site": "pharmacy",
+             "site_name": "School of Pharmacy",
+             "title": "Waterloo Pharmacy Golf Invitational 2014",
+             "times": [
+                       {
+                       "start": "2014-09-08T00:00:00-04:00",
+                       "end": "2014-09-08T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reception"
+                      ],
+             "link": "https://uwaterloo.ca/pharmacy/events/waterloo-pharmacy-golf-invitational-2014",
+             "updated": "2014-08-12T13:01:41-04:00"
+             },
+             {
+             "id": 1550,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-08T14:00:00-04:00",
+                       "end": "2014-09-08T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-120",
+             "updated": "2014-08-18T12:38:54-04:00"
+             },
+             {
+             "id": 326,
+             "site": "chemical-engineering",
+             "site_name": "Chemical Engineering",
+             "title": "Notice of PhD Oral Defence - &quot;A Synthetic Biology Approach to Bacteria-Mediated Tumor Targeting&quot; by Bahram Zargar",
+             "times": [
+                       {
+                       "start": "2014-09-09T10:30:00-04:00",
+                       "end": "2014-09-09T10:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/chemical-engineering/events/notice-phd-oral-defence-synthetic-biology-approach-bacteria",
+             "updated": "2014-08-12T16:02:52-04:00"
+             },
+             {
+             "id": 610,
+             "site": "institute-nanotechnology",
+             "site_name": "Waterloo Institute for Nanotechnology",
+             "title": "WIN Nano Graduate Student Seminar Series",
+             "times": [
+                       {
+                       "start": "2014-09-09T16:30:00-04:00",
+                       "end": "2014-09-09T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-16T16:30:00-04:00",
+                       "end": "2014-09-16T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-23T16:30:00-04:00",
+                       "end": "2014-09-23T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-30T16:30:00-04:00",
+                       "end": "2014-09-30T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-07T16:30:00-04:00",
+                       "end": "2014-10-07T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-14T16:30:00-04:00",
+                       "end": "2014-10-14T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-21T16:30:00-04:00",
+                       "end": "2014-10-21T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-28T16:30:00-04:00",
+                       "end": "2014-10-28T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-04T17:30:00-05:00",
+                       "end": "2014-11-04T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-11T17:30:00-05:00",
+                       "end": "2014-11-11T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-18T17:30:00-05:00",
+                       "end": "2014-11-18T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-25T17:30:00-05:00",
+                       "end": "2014-11-25T18:30:00-05:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/institute-nanotechnology/events/win-nano-graduate-student-seminar-series",
+             "updated": "2014-08-08T11:24:44-04:00"
+             },
+             {
+             "id": 1507,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Effective Lesson Plans (CTE202)",
+             "times": [
+                       {
+                       "start": "2014-09-10T09:30:00-04:00",
+                       "end": "2014-09-10T11:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/effective-lesson-plans-cte202-11",
+             "updated": "2014-08-08T09:42:14-04:00"
+             },
+             {
+             "id": 1398,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started With LEARN (CTE656)",
+             "times": [
+                       {
+                       "start": "2014-09-10T13:00:00-04:00",
+                       "end": "2014-09-10T15:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-cte656-10",
+             "updated": "2014-06-27T15:56:11-04:00"
+             },
+             {
+             "id": 1551,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-10T14:00:00-04:00",
+                       "end": "2014-09-10T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-121",
+             "updated": "2014-08-21T16:35:21-04:00"
+             },
+             {
+             "id": 157,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 001: Library Foundations",
+             "times": [
+                       {
+                       "start": "2014-09-11T10:00:00-04:00",
+                       "end": "2014-09-11T10:50:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-001-library-foundations",
+             "updated": "2014-08-21T16:15:00-04:00"
+             },
+             {
+             "id": 1925,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "UW Farm Market - Fall term",
+             "times": [
+                       {
+                       "start": "2014-09-11T13:00:00-04:00",
+                       "end": "2014-09-11T17:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-18T13:00:00-04:00",
+                       "end": "2014-09-18T17:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-25T13:00:00-04:00",
+                       "end": "2014-09-25T17:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-01T13:00:00-04:00",
+                       "end": "2014-10-01T17:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-08T13:00:00-04:00",
+                       "end": "2014-10-08T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/events/events/uw-farm-market-fall-term",
+             "updated": "2014-06-05T15:28:59-04:00"
+             },
+             {
+             "id": 1508,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Giving and Receiving Feedback (CTE106)",
+             "times": [
+                       {
+                       "start": "2014-09-11T14:30:00-04:00",
+                       "end": "2014-09-11T16:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/giving-and-receiving-feedback-cte106-4",
+             "updated": "2014-08-08T09:47:14-04:00"
+             },
+             {
+             "id": 2292,
+             "site": "information-systems-technology",
+             "site_name": "Information Systems &amp; Technology",
+             "title": "Seminar: IST Portfolio Management Group Update",
+             "times": [
+                       {
+                       "start": "2014-09-12T09:00:00-04:00",
+                       "end": "2014-09-12T09:45:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/information-systems-technology/events/seminar-ist-portfolio-management-group-update",
+             "updated": "2014-08-12T16:29:44-04:00"
+             },
+             {
+             "id": 327,
+             "site": "chemical-engineering",
+             "site_name": "Chemical Engineering",
+             "title": "Notice of PhD Oral Defence - &quot;An Exergy-Based Framework for Efficiency Improvement for Integrated Oxy-Fuel Power Generation Systems with CO2 Capture&quot; by Ahmed Shafeen",
+             "times": [
+                       {
+                       "start": "2014-09-12T14:00:00-04:00",
+                       "end": "2014-09-12T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/chemical-engineering/events/notice-phd-oral-defence-exergy-based-framework-efficiency",
+             "updated": "2014-08-12T16:05:56-04:00"
+             },
+             {
+             "id": 1401,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started in LEARN for TAs (CTE550)",
+             "times": [
+                       {
+                       "start": "2014-09-12T15:00:00-04:00",
+                       "end": "2014-09-12T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-tas-cte550-9",
+             "updated": "2014-07-07T14:25:41-04:00"
+             },
+             {
+             "id": 118,
+             "site": "women-in-engineering",
+             "site_name": "Women in Engineering",
+             "title": "Junior Girls Club",
+             "times": [
+                       {
+                       "start": "2014-09-13T04:00:00-04:00",
+                       "end": "2014-09-13T04:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-18T04:00:00-04:00",
+                       "end": "2014-10-18T04:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-22T05:00:00-05:00",
+                       "end": "2014-11-22T05:00:00-05:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/women-in-engineering/events/junior-girls-club",
+             "updated": "2014-08-19T15:12:07-04:00"
+             },
+             {
+             "id": 111,
+             "site": "women-in-engineering",
+             "site_name": "Women in Engineering",
+             "title": "WiE Welcome Barbeque",
+             "times": [
+                       {
+                       "start": "2014-09-13T12:00:00-04:00",
+                       "end": "2014-09-13T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/women-in-engineering/events/wie-welcome-barbeque",
+             "updated": "2014-08-18T17:30:47-04:00"
+             },
+             {
+             "id": 328,
+             "site": "chemical-engineering",
+             "site_name": "Chemical Engineering",
+             "title": "Notice of PhD Oral Defence - &quot;Nanostructured Composites as Electrochemical Catalysts for Li Air Batteries&quot; by Hey Woong Park",
+             "times": [
+                       {
+                       "start": "2014-09-15T11:00:00-04:00",
+                       "end": "2014-09-15T11:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/chemical-engineering/events/notice-phd-oral-defence-nanostructured-composites",
+             "updated": "2014-08-12T16:08:58-04:00"
+             },
+             {
+             "id": 779,
+             "site": "graduate-studies",
+             "site_name": "Graduate Studies",
+             "title": "Graduate scholarship information session",
+             "times": [
+                       {
+                       "start": "2014-09-15T16:00:00-04:00",
+                       "end": "2014-09-15T17:45:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/graduate-studies/events/graduate-scholarship-information-session",
+             "updated": "2014-07-30T16:17:18-04:00"
+             },
+             {
+             "id": 1509,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Teaching with Confidence (CTE234)",
+             "times": [
+                       {
+                       "start": "2014-09-16T13:00:00-04:00",
+                       "end": "2014-09-16T14:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/teaching-confidence-cte234-1",
+             "updated": "2014-08-08T09:48:55-04:00"
+             },
+             {
+             "id": 163,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 003: Advanced Searching: Databases",
+             "times": [
+                       {
+                       "start": "2014-09-16T13:00:00-04:00",
+                       "end": "2014-09-16T13:50:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-003-advanced-searching-databases",
+             "updated": "2014-08-21T16:31:13-04:00"
+             },
+             {
+             "id": 1552,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-16T14:00:00-04:00",
+                       "end": "2014-09-16T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-122",
+             "updated": "2014-08-18T12:39:51-04:00"
+             },
+             {
+             "id": 106,
+             "site": "university-club",
+             "site_name": "University Club",
+             "title": "Welcome Back Buffet",
+             "times": [
+                       {
+                       "start": "2014-09-17T11:30:00-04:00",
+                       "end": "2014-09-17T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/university-club/events/welcome-back-buffet",
+             "updated": "2014-07-30T15:24:32-04:00"
+             },
+             {
+             "id": 275,
+             "site": "recreation-committee",
+             "site_name": "University of Waterloo Recreation Committee",
+             "title": "UWRC Book Club: The Massey Murder by Charlotte Gray",
+             "times": [
+                       {
+                       "start": "2014-09-17T12:00:00-04:00",
+                       "end": "2014-09-17T13:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/recreation-committee/events/uwrc-book-club-massey-murder-charlotte-gray",
+             "updated": "2014-06-09T17:12:29-04:00"
+             },
+             {
+             "id": 158,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 001: Library Foundations",
+             "times": [
+                       {
+                       "start": "2014-09-17T13:30:00-04:00",
+                       "end": "2014-09-17T14:20:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-001-library-foundations-0",
+             "updated": "2014-08-21T16:15:25-04:00"
+             },
+             {
+             "id": 1553,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-17T14:00:00-04:00",
+                       "end": "2014-09-17T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-123",
+             "updated": "2014-08-18T12:40:14-04:00"
+             },
+             {
+             "id": 1399,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started in LEARN for TAs (CTE550)",
+             "times": [
+                       {
+                       "start": "2014-09-17T15:00:00-04:00",
+                       "end": "2014-09-17T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-tas-cte550-7",
+             "updated": "2014-06-27T15:55:36-04:00"
+             },
+             {
+             "id": 1510,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Teaching Methods (CTE217)",
+             "times": [
+                       {
+                       "start": "2014-09-18T09:30:00-04:00",
+                       "end": "2014-09-18T11:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/teaching-methods-cte217-6",
+             "updated": "2014-08-08T10:20:31-04:00"
+             },
+             {
+             "id": 1555,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-18T09:30:00-04:00",
+                       "end": "2014-09-18T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-125",
+             "updated": "2014-08-14T15:57:28-04:00"
+             },
+             {
+             "id": 160,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 002: Searching: The Library Catalogue",
+             "times": [
+                       {
+                       "start": "2014-09-18T10:00:00-04:00",
+                       "end": "2014-09-18T10:50:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-002-searching-library-catalogue",
+             "updated": "2014-08-21T16:15:53-04:00"
+             },
+             {
+             "id": 201,
+             "site": "games-institute",
+             "site_name": "Games Institute",
+             "title": "MetaFandom Unconference",
+             "times": [
+                       {
+                       "start": "2014-09-18T12:00:00-04:00",
+                       "end": "2014-09-19T18:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/games-institute/events/metafandom-unconference",
+             "updated": "2014-07-28T13:58:56-04:00"
+             },
+             {
+             "id": 1402,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Using LEARN&#039;s Quiz Feature (CTE666)",
+             "times": [
+                       {
+                       "start": "2014-09-18T13:00:00-04:00",
+                       "end": "2014-09-18T14:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/using-learns-quiz-feature-cte666-2",
+             "updated": "2014-07-07T14:26:29-04:00"
+             },
+             {
+             "id": 1554,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-18T14:00:00-04:00",
+                       "end": "2014-09-18T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-124",
+             "updated": "2014-08-14T15:56:59-04:00"
+             },
+             {
+             "id": 88,
+             "site": "hong-kong-office",
+             "site_name": "Hong Kong Foundation",
+             "title": "Fall 2014 social for co-op and exchange students",
+             "times": [
+                       {
+                       "start": "2014-09-19T06:00:00-04:00",
+                       "end": "2014-09-19T06:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/hong-kong-office/events/fall-2014-social-co-op-and-exchange-students",
+             "updated": "2014-03-11T23:39:46-04:00"
+             },
+             {
+             "id": 88,
+             "site": "hong-kong-foundation",
+             "site_name": "Hong Kong Foundation",
+             "title": "Fall 2014 social for co-op and exchange students",
+             "times": [
+                       {
+                       "start": "2014-09-19T06:00:00-04:00",
+                       "end": "2014-09-19T06:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/hong-kong-foundation/events/fall-2014-social-co-op-and-exchange-students",
+             "updated": "2014-03-11T23:39:46-04:00"
+             },
+             {
+             "id": 2293,
+             "site": "information-systems-technology",
+             "site_name": "Information Systems &amp; Technology",
+             "title": "Seminar: IT Best Practices Project Update",
+             "times": [
+                       {
+                       "start": "2014-09-19T09:00:00-04:00",
+                       "end": "2014-09-19T09:45:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/information-systems-technology/events/seminar-it-best-practices-project-update",
+             "updated": "2014-08-12T16:30:55-04:00"
+             },
+             {
+             "id": 1049,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Ontario Universities&#039; Fair",
+             "times": [
+                       {
+                       "start": "2014-09-19T14:00:00-04:00",
+                       "end": "2014-09-19T21:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-20T14:00:00-04:00",
+                       "end": "2014-09-20T21:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-09-21T14:00:00-04:00",
+                       "end": "2014-09-21T21:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house"
+                      ],
+             "link": "https://uwaterloo.ca/environment/events/ontario-universities-fair-1",
+             "updated": "2014-08-06T13:59:21-04:00"
+             },
+             {
+             "id": 197,
+             "site": "games-institute",
+             "site_name": "Games Institute",
+             "title": "Fall 2014 GI Jam - LEARN+MAKE",
+             "times": [
+                       {
+                       "start": "2014-09-20T00:00:00-04:00",
+                       "end": "2014-09-21T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Workshop"
+                      ],
+             "link": "https://uwaterloo.ca/games-institute/events/fall-2014-gi-jam-learnmake",
+             "updated": "2014-07-05T16:28:06-04:00"
+             },
+             {
+             "id": 1989,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "Doors Open Waterloo Region",
+             "times": [
+                       {
+                       "start": "2014-09-20T09:00:00-04:00",
+                       "end": "2014-09-20T17:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house"
+                      ],
+             "link": "https://uwaterloo.ca/events/events/doors-open-waterloo-region-1",
+             "updated": "2014-07-16T10:22:27-04:00"
+             },
+             {
+             "id": 1048,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "The Ceremony of Induction into Professional Planning Education",
+             "times": [
+                       {
+                       "start": "2014-09-20T09:30:00-04:00",
+                       "end": "2014-09-20T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/environment/events/ceremony-induction-professional-planning-education",
+             "updated": "2014-08-06T13:57:52-04:00"
+             },
+             {
+             "id": 1985,
+             "site": "grebel",
+             "site_name": "Conrad Grebel University College",
+             "title": "MSCU Centre for Peace Advancement Opening Celebration",
+             "times": [
+                       {
+                       "start": "2014-09-21T14:00:00-04:00",
+                       "end": "2014-09-21T14:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house",
+                      "Reception"
+                      ],
+             "link": "https://uwaterloo.ca/grebel/events/mscu-centre-peace-advancement-opening-celebration",
+             "updated": "2014-07-10T14:39:27-04:00"
+             },
+             {
+             "id": 1556,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-22T09:30:00-04:00",
+                       "end": "2014-09-22T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-126",
+             "updated": "2014-08-18T12:40:43-04:00"
+             },
+             {
+             "id": 170,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "Finding Conference Proceedings",
+             "times": [
+                       {
+                       "start": "2014-09-22T13:30:00-04:00",
+                       "end": "2014-09-22T15:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/finding-conference-proceedings-0",
+             "updated": "2014-08-21T17:13:48-04:00"
+             },
+             {
+             "id": 1536,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "CUT Research Projects Workshop (CTE146)",
+             "times": [
+                       {
+                       "start": "2014-09-22T14:30:00-04:00",
+                       "end": "2014-09-22T16:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/cut-research-projects-workshop-cte146-3",
+             "updated": "2014-08-12T14:55:28-04:00"
+             },
+             {
+             "id": 1403,
+             "site": "institute-for-quantum-computing",
+             "site_name": "Institute for Quantum Computing",
+             "title": "Chang: Cold atoms coupled to photonic crystals: a platform for tunable long-range interactions",
+             "times": [
+                       {
+                       "start": "2014-09-22T14:30:00-04:00",
+                       "end": "2014-09-22T15:25:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/institute-for-quantum-computing/events/chang-cold-atoms-coupled-photonic-crystals-platform-tunable",
+             "updated": "2014-07-07T12:26:51-04:00"
+             },
+             {
+             "id": 2008,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "IXL Learning Info Session",
+             "times": [
+                       {
+                       "start": "2014-09-22T14:30:00-04:00",
+                       "end": "2014-09-22T16:30:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Information session"
+                      ],
+             "link": "https://uwaterloo.ca/events/events/ixl-learning-info-session",
+             "updated": "2014-08-06T09:20:39-04:00"
+             },
+             {
+             "id": 1561,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Microteaching Session",
+             "times": [
+                       {
+                       "start": "2014-09-23T09:30:00-04:00",
+                       "end": "2014-09-23T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/microteaching-session-128",
+             "updated": "2014-08-15T09:25:42-04:00"
+             },
+             {
+             "id": 159,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 001: Library Foundations",
+             "times": [
+                       {
+                       "start": "2014-09-23T13:00:00-04:00",
+                       "end": "2014-09-23T13:50:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-001-library-foundations-1",
+             "updated": "2014-08-21T16:16:32-04:00"
+             },
+             {
+             "id": 1511,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Teaching Philosophy Statements (CTE196)",
+             "times": [
+                       {
+                       "start": "2014-09-23T14:30:00-04:00",
+                       "end": "2014-09-23T16:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/teaching-philosophy-statements-cte196-5",
+             "updated": "2014-08-08T09:55:56-04:00"
+             },
+             {
+             "id": 1400,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Getting Started in LEARN for TAs (CTE550)",
+             "times": [
+                       {
+                       "start": "2014-09-23T15:00:00-04:00",
+                       "end": "2014-09-23T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/getting-started-learn-tas-cte550-8",
+             "updated": "2014-07-07T14:26:59-04:00"
+             },
+             {
+             "id": 268,
+             "site": "music",
+             "site_name": "Music",
+             "title": "Noon Hour Concert: Trio d&#039;Argento",
+             "times": [
+                       {
+                       "start": "2014-09-24T12:30:00-04:00",
+                       "end": "2014-09-24T12:30:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Performance"
+                      ],
+             "link": "https://uwaterloo.ca/music/events/noon-hour-concert-trio-dargento",
+             "updated": "2014-07-28T13:50:25-04:00"
+             },
+             {
+             "id": 1992,
+             "site": "grebel",
+             "site_name": "Conrad Grebel University College",
+             "title": "Noon Hour Concert: Trio d&#039;Argento",
+             "times": [
+                       {
+                       "start": "2014-09-24T12:30:00-04:00",
+                       "end": "2014-09-24T12:30:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Performance"
+                      ],
+             "link": "https://uwaterloo.ca/grebel/events/noon-hour-concert-trio-dargento",
+             "updated": "2014-08-05T12:28:24-04:00"
+             },
+             {
+             "id": 1483,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Interactive Teaching Activities (CTE165)",
+             "times": [
+                       {
+                       "start": "2014-09-24T13:00:00-04:00",
+                       "end": "2014-09-24T14:30:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/interactive-teaching-activities-cte165-3",
+             "updated": "2014-08-05T10:42:20-04:00"
+             },
+             {
+             "id": 161,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "LIB 002: Searching: The Library Catalogue",
+             "times": [
+                       {
+                       "start": "2014-09-24T13:30:00-04:00",
+                       "end": "2014-09-24T14:20:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/lib-002-searching-library-catalogue-0",
+             "updated": "2014-08-21T16:17:01-04:00"
+             },
+             {
+             "id": 118,
+             "site": "counselling-services",
+             "site_name": "Counselling Services",
+             "title": "Mindfulness-Based Cognitive Therapy",
+             "times": [
+                       {
+                       "start": "2014-09-24T20:30:00-04:00",
+                       "end": "2014-09-24T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-01T20:30:00-04:00",
+                       "end": "2014-10-01T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-08T20:30:00-04:00",
+                       "end": "2014-10-08T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-15T20:30:00-04:00",
+                       "end": "2014-10-15T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-22T20:30:00-04:00",
+                       "end": "2014-10-22T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-29T20:30:00-04:00",
+                       "end": "2014-10-29T22:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-05T21:30:00-05:00",
+                       "end": "2014-11-05T23:30:00-05:00"
+                       },
+                       {
+                       "start": "2014-11-12T21:30:00-05:00",
+                       "end": "2014-11-12T23:30:00-05:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/counselling-services/events/mindfulness-based-cognitive-therapy-0",
+             "updated": "2014-08-21T13:38:53-04:00"
+             },
+             {
+             "id": 171,
+             "site": "library/news",
+             "site_name": "Library News",
+             "title": "Citing Properly with RefWorks",
+             "times": [
+                       {
+                       "start": "2014-09-25T10:00:00-04:00",
+                       "end": "2014-09-25T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/library/news/events/citing-properly-refworks-3",
+             "updated": "2014-08-21T17:16:29-04:00"
+             },
+             {
+             "id": 1403,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Using the Grades Tool in Waterloo LEARN (CTE668)",
+             "times": [
+                       {
+                       "start": "2014-09-25T14:30:00-04:00",
+                       "end": "2014-09-25T16:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/using-grades-tool-waterloo-learn-cte668-1",
+             "updated": "2014-07-07T14:27:23-04:00"
+             },
+             {
+             "id": 1296,
+             "site": "arts",
+             "site_name": "Arts",
+             "title": "Celebrating International Day of Peace",
+             "times": [
+                       {
+                       "start": "2014-09-25T19:00:00-04:00",
+                       "end": "2014-09-25T19:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Lecture"
+                      ],
+             "link": "https://uwaterloo.ca/arts/events/celebrating-international-day-peace",
+             "updated": "2014-07-11T16:04:46-04:00"
+             },
+             {
+             "id": 1986,
+             "site": "grebel",
+             "site_name": "Conrad Grebel University College",
+             "title": "Celebrating International Day of Peace",
+             "times": [
+                       {
+                       "start": "2014-09-25T19:00:00-04:00",
+                       "end": "2014-09-25T19:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/grebel/events/celebrating-international-day-peace",
+             "updated": "2014-08-20T12:51:16-04:00"
+             },
+             {
+             "id": 2000,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "Celebrating International Day of Peace",
+             "times": [
+                       {
+                       "start": "2014-09-25T19:00:00-04:00",
+                       "end": "2014-09-25T19:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/events/events/celebrating-international-day-peace",
+             "updated": "2014-07-28T14:29:35-04:00"
+             },
+             {
+             "id": 2294,
+             "site": "information-systems-technology",
+             "site_name": "Information Systems &amp; Technology",
+             "title": "Seminar: Virtual Applications and Desktops",
+             "times": [
+                       {
+                       "start": "2014-09-26T09:00:00-04:00",
+                       "end": "2014-09-26T09:45:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Seminar"
+                      ],
+             "link": "https://uwaterloo.ca/information-systems-technology/events/seminar-virtual-applications-and-desktops",
+             "updated": "2014-08-12T16:31:47-04:00"
+             },
+             {
+             "id": 1512,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Grading Student Papers (CTE227)",
+             "times": [
+                       {
+                       "start": "2014-09-26T09:30:00-04:00",
+                       "end": "2014-09-26T11:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/grading-student-papers-cte227-1",
+             "updated": "2014-08-08T09:58:13-04:00"
+             },
+             {
+             "id": 1404,
+             "site": "centre-for-teaching-excellence",
+             "site_name": "Centre for Teaching Excellence",
+             "title": "Timesaving Tips in LEARN (CTE706)",
+             "times": [
+                       {
+                       "start": "2014-09-26T10:00:00-04:00",
+                       "end": "2014-09-26T12:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/centre-for-teaching-excellence/events/timesaving-tips-learn-cte706-1",
+             "updated": "2014-07-07T14:31:31-04:00"
+             },
+             {
+             "id": 295,
+             "site": "philosophy",
+             "site_name": "Philosophy",
+             "title": "Philosophy Colloquium Series 2014-2015",
+             "times": [
+                       {
+                       "start": "2014-09-26T15:30:00-04:00",
+                       "end": "2014-09-26T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/philosophy/events/philosophy-colloquium-series-2014-2015-0",
+             "updated": "2014-07-21T14:34:54-04:00"
+             },
+             {
+             "id": 127,
+             "site": "counselling-services",
+             "site_name": "Counselling Services",
+             "title": "Mind. Body. Run.",
+             "times": [
+                       {
+                       "start": "2014-09-26T17:30:00-04:00",
+                       "end": "2014-09-26T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-28T18:30:00-05:00",
+                       "end": "2014-11-28T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2015-01-30T18:30:00-05:00",
+                       "end": "2015-01-30T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2015-04-03T17:30:00-04:00",
+                       "end": "2015-04-03T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2015-06-05T17:30:00-04:00",
+                       "end": "2015-06-05T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2015-08-07T17:30:00-04:00",
+                       "end": "2015-08-07T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2015-10-09T17:30:00-04:00",
+                       "end": "2015-10-09T17:30:00-04:00"
+                       },
+                       {
+                       "start": "2015-12-11T18:30:00-05:00",
+                       "end": "2015-12-11T18:30:00-05:00"
+                       },
+                       {
+                       "start": "2016-02-12T18:30:00-05:00",
+                       "end": "2016-02-12T18:30:00-05:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/counselling-services/events/mind-body-run",
+             "updated": "2014-08-21T14:37:44-04:00"
+             },
+             {
+             "id": 198,
+             "site": "games-institute",
+             "site_name": "Games Institute",
+             "title": "Fall 2014 GI Jam - PLAY",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/games-institute/events/fall-2014-gi-jam-play",
+             "updated": "2014-07-05T16:30:45-04:00"
+             },
+             {
+             "id": 587,
+             "site": "optometry-vision-science",
+             "site_name": "Optometry &amp; Vision Science",
+             "title": "Alumni Reunion 2014",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/optometry-vision-science/events/alumni-reunion-2014",
+             "updated": "2014-07-04T16:47:44-04:00"
+             },
+             {
+             "id": 930,
+             "site": "science",
+             "site_name": "Science",
+             "title": "Reunion 2014",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/science/events/reunion-2014",
+             "updated": "2014-08-06T13:49:40-04:00"
+             },
+             {
+             "id": 1699,
+             "site": "engineering",
+             "site_name": "Engineering",
+             "title": "Waterloo Engineering 50th Alumni Reunion",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/engineering/events/waterloo-engineering-50th-alumni-reunion",
+             "updated": "2014-03-20T23:33:02-04:00"
+             },
+             {
+             "id": 1700,
+             "site": "engineering",
+             "site_name": "Engineering",
+             "title": "Waterloo Engineering 25th Alumni Reunion",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/engineering/events/waterloo-engineering-25th-alumni-reunion",
+             "updated": "2014-04-09T12:46:13-04:00"
+             },
+             {
+             "id": 1701,
+             "site": "engineering",
+             "site_name": "Engineering",
+             "title": "Waterloo Engineering 5, 10, 15, 20, 30, 35, 40, and 45 Alumni Reunion",
+             "times": [
+                       {
+                       "start": "2014-09-27T00:00:00-04:00",
+                       "end": "2014-09-27T00:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/engineering/events/waterloo-engineering-5-10-15-20-30-35-40-and-45-alumni",
+             "updated": "2014-04-09T12:48:32-04:00"
+             },
+             {
+             "id": 119,
+             "site": "women-in-engineering",
+             "site_name": "Women in Engineering",
+             "title": "Senior Girls Club",
+             "times": [
+                       {
+                       "start": "2014-09-27T04:00:00-04:00",
+                       "end": "2014-09-27T04:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-10-25T04:00:00-04:00",
+                       "end": "2014-10-25T04:00:00-04:00"
+                       },
+                       {
+                       "start": "2014-11-29T05:00:00-05:00",
+                       "end": "2014-11-29T05:00:00-05:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/women-in-engineering/events/senior-girls-club",
+             "updated": "2014-08-19T15:13:42-04:00"
+             },
+             {
+             "id": 1988,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "29th Annual Faculty of Applied Health Sciences (AHS) Fun Run",
+             "times": [
+                       {
+                       "start": "2014-09-27T09:00:00-04:00",
+                       "end": "2014-09-27T09:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/events/events/29th-annual-faculty-applied-health-sciences-ahs-fun-run",
+             "updated": "2014-07-14T16:05:21-04:00"
+             },
+             {
+             "id": 880,
+             "site": "applied-health-sciences",
+             "site_name": "Applied Health Sciences",
+             "title": "AHS Fun Run 2014",
+             "times": [
+                       {
+                       "start": "2014-09-27T09:00:00-04:00",
+                       "end": "2014-09-27T09:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/applied-health-sciences/events/ahs-fun-run-2014",
+             "updated": "2014-07-14T15:57:29-04:00"
+             },
+             {
+             "id": 1318,
+             "site": "renison",
+             "site_name": "Renison University College",
+             "title": "20th annual East Asian Festival",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/renison/events/20th-annual-east-asian-festival",
+             "updated": "2014-03-17T13:23:02-04:00"
+             },
+             {
+             "id": 66,
+             "site": "east-asian-studies",
+             "site_name": "East Asian Studies",
+             "title": "20th annual East Asian Festival",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/east-asian-studies/events/20th-annual-east-asian-festival",
+             "updated": "2014-05-26T11:17:16-04:00"
+             },
+             {
+             "id": 2388,
+             "site": "alumni",
+             "site_name": "Alumni",
+             "title": "Reunion Alumni VIP Tent",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T11:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/alumni/events/alumni-vip-tent-2014",
+             "updated": "2014-04-25T12:03:46-04:00"
+             },
+             {
+             "id": 878,
+             "site": "psychology",
+             "site_name": "Psychology",
+             "title": "Reunion 2014, Rediscover Arts",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T11:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/psychology/events/reunion-2014-rediscover-arts",
+             "updated": "2014-07-22T16:01:16-04:00"
+             },
+             {
+             "id": 1301,
+             "site": "arts",
+             "site_name": "Arts",
+             "title": "Reunion 2014 - Rediscover Arts",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T11:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house"
+                      ],
+             "link": "https://uwaterloo.ca/arts/events/reunion-2014-rediscover-arts",
+             "updated": "2014-07-16T15:28:45-04:00"
+             },
+             {
+             "id": 1298,
+             "site": "arts",
+             "site_name": "Arts",
+             "title": "20th annual East Asian Festival",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/arts/events/20th-annual-east-asian-festival",
+             "updated": "2014-07-11T16:09:17-04:00"
+             },
+             {
+             "id": 1999,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "20th annual East Asian Festival",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:00:00-04:00",
+                       "end": "2014-09-27T14:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/events/events/20th-annual-east-asian-festival",
+             "updated": "2014-07-28T14:22:04-04:00"
+             },
+             {
+             "id": 620,
+             "site": "stratford-campus",
+             "site_name": "Stratford Campus",
+             "title": "Reunion 2014 - Rediscover Arts",
+             "times": [
+                       {
+                       "start": "2014-09-27T11:01:00-04:00",
+                       "end": "2014-09-27T11:01:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/stratford-campus/events/reunion-2014-rediscover-arts",
+             "updated": "2014-08-01T10:20:55-04:00"
+             },
+             {
+             "id": 1936,
+             "site": "events",
+             "site_name": "Waterloo Events",
+             "title": "11th Annual Traditional Pow Wow",
+             "times": [
+                       {
+                       "start": "2014-09-27T12:00:00-04:00",
+                       "end": "2014-09-27T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/events/events/11th-annual-traditional-pow-wow",
+             "updated": "2014-06-16T10:52:25-04:00"
+             },
+             {
+             "id": 366,
+             "site": "stpauls",
+             "site_name": "St. Paul&#039;s University College",
+             "title": "11th Annual Traditional Pow Wow",
+             "times": [
+                       {
+                       "start": "2014-09-27T12:00:00-04:00",
+                       "end": "2014-09-27T17:00:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Open house",
+                      "Performance"
+                      ],
+             "link": "https://uwaterloo.ca/stpauls/events/11th-annual-traditional-pow-wow",
+             "updated": "2014-05-29T16:21:43-04:00"
+             },
+             {
+             "id": 1297,
+             "site": "arts",
+             "site_name": "Arts",
+             "title": "11th Annual Traditional Pow Wow",
+             "times": [
+                       {
+                       "start": "2014-09-27T12:00:00-04:00",
+                       "end": "2014-09-27T17:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/arts/events/11th-annual-traditional-pow-wow",
+             "updated": "2014-07-11T16:02:20-04:00"
+             },
+             {
+             "id": 879,
+             "site": "applied-health-sciences",
+             "site_name": "Applied Health Sciences",
+             "title": "2014 AHS Alumni Reunion Banquet",
+             "times": [
+                       {
+                       "start": "2014-09-27T17:30:00-04:00",
+                       "end": "2014-09-27T17:30:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reunion"
+                      ],
+             "link": "https://uwaterloo.ca/applied-health-sciences/events/2014-ahs-alumni-reunion-banquet",
+             "updated": "2014-07-14T15:52:40-04:00"
+             },
+             {
+             "id": 1972,
+             "site": "grebel",
+             "site_name": "Conrad Grebel University College",
+             "title": "60&#039;s Era Alumni Reunion",
+             "times": [
+                       {
+                       "start": "2014-09-27T18:00:00-04:00",
+                       "end": "2014-09-27T18:00:00-04:00"
+                       }
+                       ],
+             "type": [],
+             "link": "https://uwaterloo.ca/grebel/events/60s-era-alumni-reunion",
+             "updated": "2014-07-17T14:52:16-04:00"
+             },
+             {
+             "id": 983,
+             "site": "environment",
+             "site_name": "uWaterloo - Faculty of Environment",
+             "title": "Class of &#039;89 and &#039;64 Reunions",
+             "times": [
+                       {
+                       "start": "2014-09-27T17:30:00-04:00",
+                       "end": "2014-09-27T20:30:00-04:00"
+                       }
+                       ],
+             "type": [
+                      "Reception"
+                      ],
+             "link": "https://uwaterloo.ca/environment/events/class-89-and-64-reunions",
+             "updated": "2014-03-26T08:35:08-04:00"
+             }
+             ]
+}   

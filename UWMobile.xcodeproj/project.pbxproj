@@ -15,13 +15,18 @@
 		41B87FE519B0251C00C7C2CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE419B0251C00C7C2CE /* main.m */; };
 		41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FE819B0251C00C7C2CE /* AppDelegate.m */; };
 		41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FEA19B0251C00C7C2CE /* Main.storyboard */; };
-		41B87FF219B0251C00C7C2CE /* UWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FF119B0251C00C7C2CE /* UWViewController.m */; };
+		41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B87FF119B0251C00C7C2CE /* NewsViewController.m */; };
 		41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B87FF319B0251C00C7C2CE /* Images.xcassets */; };
 		41B87FFB19B0251C00C7C2CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FFA19B0251C00C7C2CE /* XCTest.framework */; };
 		41B87FFC19B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
 		41B87FFD19B0251C00C7C2CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDC19B0251C00C7C2CE /* UIKit.framework */; };
 		41B8800519B0251C00C7C2CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41B8800319B0251C00C7C2CE /* InfoPlist.strings */; };
 		41B8800719B0251C00C7C2CE /* UWMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8800619B0251C00C7C2CE /* UWMobileTests.m */; };
+		41B8801219B03E7200C7C2CE /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 41B8801119B03E7200C7C2CE /* events.json */; };
+		41B8801419B03F2700C7C2CE /* infosessions.json in Resources */ = {isa = PBXBuildFile; fileRef = 41B8801319B03F2700C7C2CE /* infosessions.json */; };
+		41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8801A19B0A96600C7C2CE /* UWEvent.m */; };
+		41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */; };
+		41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +51,23 @@
 		41B87FE719B0251C00C7C2CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41B87FE819B0251C00C7C2CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41B87FEB19B0251C00C7C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41B87FF019B0251C00C7C2CE /* UWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UWViewController.h; sourceTree = "<group>"; };
-		41B87FF119B0251C00C7C2CE /* UWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWViewController.m; sourceTree = "<group>"; };
+		41B87FF019B0251C00C7C2CE /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		41B87FF119B0251C00C7C2CE /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		41B87FF319B0251C00C7C2CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B87FFA19B0251C00C7C2CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobileTests-Info.plist"; sourceTree = "<group>"; };
 		41B8800419B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41B8800619B0251C00C7C2CE /* UWMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWMobileTests.m; sourceTree = "<group>"; };
+		41B8801119B03E7200C7C2CE /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		41B8801319B03F2700C7C2CE /* infosessions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = infosessions.json; sourceTree = "<group>"; };
+		41B8801619B0A8C600C7C2CE /* UWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWModel.h; sourceTree = "<group>"; };
+		41B8801919B0A96600C7C2CE /* UWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWEvent.h; sourceTree = "<group>"; };
+		41B8801A19B0A96600C7C2CE /* UWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWEvent.m; sourceTree = "<group>"; };
+		41B8801C19B27C4B00C7C2CE /* UWEventTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWEventTimes.h; sourceTree = "<group>"; };
+		41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWEventTimes.m; sourceTree = "<group>"; };
+		41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,11 +132,15 @@
 		41B87FDE19B0251C00C7C2CE /* UWMobile */ = {
 			isa = PBXGroup;
 			children = (
+				41B8802219B2CFDB00C7C2CE /* Controllers */,
+				41B8801519B0A8AD00C7C2CE /* Models */,
 				41B87FE719B0251C00C7C2CE /* AppDelegate.h */,
 				41B87FE819B0251C00C7C2CE /* AppDelegate.m */,
 				41B87FEA19B0251C00C7C2CE /* Main.storyboard */,
-				41B87FF019B0251C00C7C2CE /* UWViewController.h */,
-				41B87FF119B0251C00C7C2CE /* UWViewController.m */,
+				41B87FF019B0251C00C7C2CE /* NewsViewController.h */,
+				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
+				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
+				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
 				41B87FF319B0251C00C7C2CE /* Images.xcassets */,
 				41B87FDF19B0251C00C7C2CE /* Supporting Files */,
 			);
@@ -132,6 +150,7 @@
 		41B87FDF19B0251C00C7C2CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41B8801019B03DF000C7C2CE /* JSON */,
 				41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */,
 				41B87FE119B0251C00C7C2CE /* InfoPlist.strings */,
 				41B87FE419B0251C00C7C2CE /* main.m */,
@@ -156,6 +175,34 @@
 				41B8800319B0251C00C7C2CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41B8801019B03DF000C7C2CE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				41B8801119B03E7200C7C2CE /* events.json */,
+				41B8801319B03F2700C7C2CE /* infosessions.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		41B8801519B0A8AD00C7C2CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41B8801619B0A8C600C7C2CE /* UWModel.h */,
+				41B8801919B0A96600C7C2CE /* UWEvent.h */,
+				41B8801A19B0A96600C7C2CE /* UWEvent.m */,
+				41B8801C19B27C4B00C7C2CE /* UWEventTimes.h */,
+				41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		41B8802219B2CFDB00C7C2CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B8801419B03F2700C7C2CE /* infosessions.json in Resources */,
+				41B8801219B03E7200C7C2CE /* events.json in Resources */,
 				41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */,
 				41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */,
 				41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */,
@@ -292,8 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B87FE919B0251C00C7C2CE /* AppDelegate.m in Sources */,
-				41B87FF219B0251C00C7C2CE /* UWViewController.m in Sources */,
+				41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */,
+				41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */,
 				41B87FE519B0251C00C7C2CE /* main.m in Sources */,
+				41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */,
+				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
