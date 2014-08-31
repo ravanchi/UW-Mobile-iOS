@@ -102,6 +102,10 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
                  NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
              }
              
+             NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"published" ascending:NO];
+             
+             newsData = [newsData sortedArrayUsingDescriptors:@[descriptor]];
+             
              self.news = newsData;
              [self.splashScreen proceedToHomeViewController];
          }
