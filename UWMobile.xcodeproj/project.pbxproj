@@ -30,6 +30,7 @@
 		41B8802619B2D38C00C7C2CE /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802519B2D38C00C7C2CE /* NewsCell.m */; };
 		41B8802919B2D80500C7C2CE /* UWNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802819B2D80500C7C2CE /* UWNews.m */; };
 		41B8802C19B2DA5D00C7C2CE /* DateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8802B19B2DA5D00C7C2CE /* DateProvider.m */; };
+		41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8805919B2F03200C7C2CE /* LeftMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		41B8802819B2D80500C7C2CE /* UWNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWNews.m; sourceTree = "<group>"; };
 		41B8802A19B2DA5D00C7C2CE /* DateProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateProvider.h; sourceTree = "<group>"; };
 		41B8802B19B2DA5D00C7C2CE /* DateProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateProvider.m; sourceTree = "<group>"; };
+		41B8805819B2F03200C7C2CE /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		41B8805919B2F03200C7C2CE /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,6 +218,8 @@
 				41B87FF119B0251C00C7C2CE /* NewsViewController.m */,
 				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
 				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
+				41B8805819B2F03200C7C2CE /* LeftMenuViewController.h */,
+				41B8805919B2F03200C7C2CE /* LeftMenuViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				41B8802919B2D80500C7C2CE /* UWNews.m in Sources */,
 				41B87FE519B0251C00C7C2CE /* main.m in Sources */,
 				41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */,
+				41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */,
 				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

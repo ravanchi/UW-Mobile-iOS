@@ -1,5 +1,8 @@
+#import <RESideMenu.h>
+
 #import "SplashScreenViewController.h"
 #import "NewsViewController.h"
+#import "LeftMenuViewController.h"
 
 @interface SplashScreenViewController ()
 
@@ -8,9 +11,16 @@
 @implementation SplashScreenViewController
 
 - (void)proceedToHomeViewController {
-    UINavigationController *nc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsNavigationController"];
-    [nc popToRootViewControllerAnimated:FALSE];
-    self.view.window.rootViewController = nc;
+    UINavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsNavigationController"];
+    [navigationController popToRootViewControllerAnimated:NO];
+    LeftMenuViewController *leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([LeftMenuViewController class])];
+    
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
+                                                                    leftMenuViewController:leftMenuViewController
+                                                                   rightMenuViewController:nil];
+
+    self.view.window.rootViewController = sideMenuViewController;
+    
 }
 
 @end

@@ -30,6 +30,32 @@
             </objects>
             <point key="canvasLocation" x="-660" y="22"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Kyi-Kn-yK0">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" id="8Jf-3U-D87" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OnE-3D-Dof"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDX-0m-wfq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NWc-OK-Zxe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-gU-fIV">
+                                <rect key="frame" x="106" y="273" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbw-3y-na3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="-687"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gt7-PZ-31t">
             <objects>
@@ -83,6 +109,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="trg-kx-GDl" firstAttribute="leading" secondItem="kC0-61-S47" secondAttribute="leading" constant="20" id="5lR-6s-cps"/>
                                     <constraint firstAttribute="trailing" secondItem="trg-kx-GDl" secondAttribute="trailing" constant="20" id="L0A-8c-8DY"/>
