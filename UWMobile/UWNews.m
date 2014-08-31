@@ -32,18 +32,14 @@
 }
 
 + (NSValueTransformer *)publishedJSONTransformer {
-    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *dateTimeString) {
-        return [[DateProvider dateFormatter] dateFromString:dateTimeString];
-    } reverseBlock:^id(NSDate *dateTime) {
-        return [[DateProvider dateFormatter] stringFromDate:dateTime];
+    return [MTLValueTransformer reversibleTransformerWithBlock:^id(NSString *dateTimeString) {
+        return [[DateProvider defaultDateFormat] dateFromString:dateTimeString];
     }];
 }
 
 + (NSValueTransformer *)updatedJSONTransformer {
-    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSString *dateTimeString) {
-        return [[DateProvider dateFormatter] dateFromString:dateTimeString];
-    } reverseBlock:^id(NSDate *dateTime) {
-        return [[DateProvider dateFormatter] stringFromDate:dateTime];
+    return [MTLValueTransformer reversibleTransformerWithBlock:^id(NSString *dateTimeString) {
+        return [[DateProvider defaultDateFormat] dateFromString:dateTimeString];
     }];
 }
 

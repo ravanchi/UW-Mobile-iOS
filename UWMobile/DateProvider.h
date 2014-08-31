@@ -1,6 +1,7 @@
 @interface DateProvider : NSObject
 
-+ (NSDateFormatter *)dateFormatter;
++ (NSDateFormatter *)defaultDateFormat;
++ (NSDateFormatter *)displayDateFormat;
 
 @end
 
