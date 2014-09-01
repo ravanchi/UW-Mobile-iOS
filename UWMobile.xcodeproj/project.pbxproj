@@ -36,6 +36,7 @@
 		41B8806319B3119400C7C2CE /* UWSideMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806219B3119400C7C2CE /* UWSideMenuItem.m */; };
 		41B8806619B314AD00C7C2CE /* SideMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806519B314AD00C7C2CE /* SideMenuItemCell.m */; };
 		41B8806919B31A5000C7C2CE /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806819B31A5000C7C2CE /* EventsViewController.m */; };
+		41B8806C19B4DE7200C7C2CE /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806B19B4DE7200C7C2CE /* EventCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		41B8806519B314AD00C7C2CE /* SideMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuItemCell.m; sourceTree = "<group>"; };
 		41B8806719B31A5000C7C2CE /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		41B8806819B31A5000C7C2CE /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		41B8806A19B4DE7200C7C2CE /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		41B8806B19B4DE7200C7C2CE /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +253,8 @@
 			children = (
 				41B8802419B2D38C00C7C2CE /* NewsCell.h */,
 				41B8802519B2D38C00C7C2CE /* NewsCell.m */,
+				41B8806A19B4DE7200C7C2CE /* EventCell.h */,
+				41B8806B19B4DE7200C7C2CE /* EventCell.m */,
 				41B8805B19B2FFF700C7C2CE /* ThinHorizontalLineView.h */,
 				41B8805C19B2FFF700C7C2CE /* ThinHorizontalLineView.m */,
 				41B8806419B314AD00C7C2CE /* SideMenuItemCell.h */,
@@ -401,6 +406,7 @@
 				41B8806319B3119400C7C2CE /* UWSideMenuItem.m in Sources */,
 				41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */,
 				41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */,
+				41B8806C19B4DE7200C7C2CE /* EventCell.m in Sources */,
 				41B8802619B2D38C00C7C2CE /* NewsCell.m in Sources */,
 				41B8805D19B2FFF700C7C2CE /* ThinHorizontalLineView.m in Sources */,
 				41B8802919B2D80500C7C2CE /* UWNews.m in Sources */,

@@ -24,6 +24,7 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
 {
     self.splashScreen = (SplashScreenViewController *)self.window.rootViewController;
     [self fetchNews];
+    [self fetchEvents];
     return YES;
 }
 
@@ -54,8 +55,7 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)fetchCurrentEvents
-{
+- (void)fetchEvents {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@", eventsUrl, apiKey];
@@ -74,6 +74,8 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
                  NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
              }
              
+             NSLog(@"%@", eventData);
+             
              self.events = eventData;
              [self.splashScreen proceedToHomeViewController];
          }
@@ -82,8 +84,7 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
          }];
 }
 
-- (void)fetchNews
-{
+- (void)fetchNews {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     NSString *newsStringUrl = [NSString stringWithFormat:@"%@?key=%@", newsUrl, apiKey];
@@ -106,8 +107,9 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
              
              newsData = [newsData sortedArrayUsingDescriptors:@[descriptor]];
              
+             NSLog(@"%@", newsData);
+             
              self.news = newsData;
-             [self.splashScreen proceedToHomeViewController];
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
