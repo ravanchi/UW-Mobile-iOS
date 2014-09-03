@@ -5,12 +5,14 @@
 #import "UWEvent.h"
 #import "UWEventTimes.h"
 #import "UWNews.h"
+#import "UWWeather.h"
 
 #import "SplashScreenViewController.h"
 
 const NSString *apiKey = @"624b3a3eab10f59832f55b39f6900947";
 const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
 const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
+const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json";
 
 @interface AppDelegate()
 
@@ -25,6 +27,7 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
     self.splashScreen = (SplashScreenViewController *)self.window.rootViewController;
     [self fetchNews];
     [self fetchEvents];
+    [self fetchWeather];
     return YES;
 }
 
@@ -55,35 +58,6 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)fetchEvents {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-    NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@", eventsUrl, apiKey];
-    
-    [manager GET:eventsStringUrl
-      parameters:nil
-         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-             NSArray *eventsJSON = responseDictionary[@"data"];
-             
-             NSError *error;
-             
-             NSArray *eventData = [MTLJSONAdapter modelsOfClass:[UWEvent class] fromJSONArray:eventsJSON error:&error];
-             
-             if (error) {
-                 NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
-             }
-             
-             NSLog(@"%@", eventData);
-             
-             self.events = eventData;
-             [self.splashScreen proceedToHomeViewController];
-         }
-         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-             NSLog(@"Error: %@", error);
-         }];
-}
-
 - (void)fetchNews {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
@@ -100,7 +74,7 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
              NSArray *newsData = [MTLJSONAdapter modelsOfClass:[UWNews class] fromJSONArray:newsJSON error:&error];
              
              if (error) {
-                 NSLog(@"Couldn't convert app infos JSON to ChoosyAppInfo models: %@", error);
+                 NSLog(@"Couldn't convert News JSON to UWNews models: %@", error);
              }
              
              NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"published" ascending:NO];
@@ -110,6 +84,80 @@ const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
              NSLog(@"%@", newsData);
              
              self.news = newsData;
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
+}
+
+- (void)fetchEvents {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *eventsStringUrl = [NSString stringWithFormat:@"%@?key=%@", eventsUrl, apiKey];
+    
+    [manager GET:eventsStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSArray *eventsJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *eventData = [MTLJSONAdapter modelsOfClass:[UWEvent class] fromJSONArray:eventsJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert Events JSON to UWEvent models: %@", error);
+             }
+             
+             eventData = [eventData sortedArrayUsingComparator:^NSComparisonResult(UWEvent *event1, UWEvent *event2){
+                 
+                 NSDate *event1StartTime = ((UWEventTimes *)event1.times[0]).startTime;
+                 NSDate *event2StartTime = ((UWEventTimes *)event2.times[0]).startTime;
+                 
+                 if ([event1StartTime laterDate:event2StartTime]) {
+                     return (NSComparisonResult)NSOrderedDescending;
+                 }
+                 
+                 if ([event1StartTime earlierDate:event2StartTime]) {
+                     return (NSComparisonResult)NSOrderedAscending;
+                 }
+                 	
+                 return (NSComparisonResult)NSOrderedSame;
+             }];
+             
+             NSLog(@"%@", eventData);
+             
+             self.events = eventData;
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
+}
+
+- (void)fetchWeather {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *weatherStringUrl = [NSString stringWithFormat:@"%@", weatherUrl];
+    
+    [manager GET:weatherStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSDictionary *weatherJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *weatherData = [MTLJSONAdapter modelOfClass:[UWWeather class] fromJSONDictionary:weatherJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert Weather JSON to UWWeather model: %@", error);
+             }
+             
+             
+             NSLog(@"%@", weatherData);
+             
+             self.weather = (UWWeather *)weatherData;
+             [self.splashScreen proceedToHomeViewController];
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);

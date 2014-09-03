@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UWMobile/AppDelegate.m"
-            timestampString = "431283051.936"
+            timestampString = "431294484.759673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-fetchNews"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-fetchEvents"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UWMobile/AppDelegate.m"
-            timestampString = "431283054.226579"
+            timestampString = "431296307.646727"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-fetchEvents"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "-fetchWeather"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
