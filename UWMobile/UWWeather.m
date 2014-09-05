@@ -7,7 +7,8 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"currentTemperature"  : @"temperature_current_c",
              @"humidity"            : @"relative_humidity_percent",
-             @"observationTime"    : @"observation_time"};
+             @"windSpeed"           : @"wind_speed_kph",
+             @"observationTime"     : @"observation_time"};
 }
 
 - (id<NSCopying>)uniqueKey {

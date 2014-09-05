@@ -5,6 +5,7 @@
 
 @property CGFloat currentTemperature;
 @property CGFloat humidity;
+@property CGFloat windSpeed;
 @property (nonatomic, strong, readonly) NSDate *observationTime;
 
 @end
