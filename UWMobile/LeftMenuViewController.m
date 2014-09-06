@@ -46,6 +46,7 @@
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"" unselectedImageName:@""]];
     
     self.menuItems = menuItems;
 }
@@ -78,6 +79,11 @@
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:eventsViewController, nil];
         } else if (indexPath.row == 2) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
+            [buildingsViewController isGooseWatch:NO];
+            ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
+        } else if (indexPath.row == 3) {
+            BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
+            [buildingsViewController isGooseWatch:YES];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
         }
         

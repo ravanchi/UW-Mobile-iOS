@@ -2,4 +2,6 @@
 
 @interface BuildingsViewController : BaseViewController
 
+- (void)isGooseWatch:(BOOL)isGooseWatchFlag;
+
 @end

@@ -7,6 +7,7 @@
 #import "UWNews.h"
 #import "UWWeather.h"
 #import "UWBuilding.h"
+#import "UWGoose.h"
 
 #import "SplashScreenViewController.h"
 
@@ -15,6 +16,7 @@ const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
 const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
 const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json";
 const NSString *buildingUrl = @"https://api.uwaterloo.ca/v2/buildings/list.json";
+const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.json";
 
 @interface AppDelegate()
 
@@ -31,6 +33,7 @@ const NSString *buildingUrl = @"https://api.uwaterloo.ca/v2/buildings/list.json"
     [self fetchEvents];
     [self fetchWeather];
     [self fetchBuildings];
+    [self fetchGeese];
     return YES;
 }
 
@@ -80,7 +83,7 @@ const NSString *buildingUrl = @"https://api.uwaterloo.ca/v2/buildings/list.json"
                  NSLog(@"Couldn't convert News JSON to UWBuilding models: %@", error);
              }
              
-             NSLog(@"%@", buildingsData);
+//             NSLog(@"%@", buildingsData);
              
              self.buildings = buildingsData;
          }
@@ -189,6 +192,34 @@ const NSString *buildingUrl = @"https://api.uwaterloo.ca/v2/buildings/list.json"
              //             NSLog(@"%@", newsData);
              
              self.news = newsData;
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
+}
+
+- (void)fetchGeese {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *geeseStringUrl = [NSString stringWithFormat:@"%@?key=%@", gooseUrl, apiKey];
+    
+    [manager GET:geeseStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSArray *geeseJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *geeseData = [MTLJSONAdapter modelsOfClass:[UWGoose class] fromJSONArray:geeseJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert News JSON to UWGoose models: %@", error);
+             }
+             
+             NSLog(@"%@", geeseData);
+             
+             self.geese = geeseData;
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);

@@ -8,5 +8,6 @@
 @property (nonatomic, strong) NSArray *news;
 @property (nonatomic, strong) UWWeather *weather;
 @property (nonatomic, strong) NSArray *buildings;
+@property (nonatomic, strong) NSArray *geese;
 
 @end
