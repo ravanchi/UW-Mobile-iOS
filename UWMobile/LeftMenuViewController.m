@@ -43,10 +43,14 @@
 - (void)initMenuItems {
     NSMutableArray *menuItems = [NSMutableArray array];
     
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Watcard Locations" selectedImageName:@"" unselectedImageName:@""]];
     
     self.menuItems = menuItems;
 }
@@ -71,20 +75,36 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([indexPath compare:self.lastSelectedIndexPath] != NSOrderedSame) {
-        if (indexPath.row == 0) {
+        if(indexPath.row == 0) {
+            //
+            //TO-DO
+            //
+        } else if (indexPath.row == 1) {
             NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:newsViewController, nil];
-        } else if (indexPath.row == 1) {
+        } else if (indexPath.row == 2) {
             EventsViewController *eventsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([EventsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:eventsViewController, nil];
-        } else if (indexPath.row == 2) {
+        } else if (indexPath.row == 3) {
+          //
+          //TO-DO
+          //
+        } else if (indexPath.row == 4) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:NO];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
-        } else if (indexPath.row == 3) {
+        } else if (indexPath.row == 5) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:YES];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
+        } else if (indexPath.row == 6) {
+            //
+            //TO-DO
+            //
+        } else if (indexPath.row == 7) {
+            //
+            //TO-DO
+            //
         }
         
         [self.sideMenuViewController setContentViewController:self.sideMenuViewController.contentViewController];
@@ -96,11 +116,9 @@
     [self.sideMenuViewController hideMenuViewController];
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSIndexPath *currentSelectedIndexPath = [tableView indexPathForSelectedRow];
-    if (currentSelectedIndexPath != nil)
-    {
+    if (currentSelectedIndexPath != nil) {
         [[tableView cellForRowAtIndexPath:currentSelectedIndexPath] setBackgroundColor:self.defaultCellBGColor];
     }
     
@@ -108,14 +126,10 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (cell.isSelected == YES)
-    {
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (cell.isSelected == YES) {
         [cell setBackgroundColor:self.selectedCellBGColor];
-    }
-    else
-    {
+    } else {
         [cell setBackgroundColor:self.defaultCellBGColor];
     }
 }

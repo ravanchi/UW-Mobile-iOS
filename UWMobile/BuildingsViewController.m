@@ -113,9 +113,9 @@ static NSString *const kGooseWatch = @"Goose Watch";
         
         pinView.canShowCallout = YES;
         if (self.isGooseWatch) {
-            pinView.image = [UIImage imageNamed:@"goose-icon.png"];
+            pinView.image = [UIImage imageNamed:@"goose_icon_map.png"];
         } else {
-            pinView.image = [UIImage imageNamed:@"building_icon.png"];
+            pinView.image = [UIImage imageNamed:@"building_icon_map.png"];
         }
     }
     else {
