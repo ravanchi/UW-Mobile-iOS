@@ -2,10 +2,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
 
-@property (strong, nonatomic) NSArray *events;
-@property (strong, nonatomic) NSArray *news;
-@property (strong, nonatomic) UWWeather *weather;
+@property (nonatomic, strong) NSArray *events;
+@property (nonatomic, strong) NSArray *news;
+@property (nonatomic, strong) UWWeather *weather;
+@property (nonatomic, strong) NSArray *buildings;
 
 @end

@@ -64,6 +64,7 @@
                                                     <rect key="frame" x="30" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -90,6 +91,9 @@
                             <constraint firstItem="QVg-7s-2fR" firstAttribute="leading" secondItem="NWc-OK-Zxe" secondAttribute="leading" id="xxM-dq-zlX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="QVg-7s-2fR" id="3BL-iV-Y5o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbw-3y-na3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,7 +141,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-eB-o3b">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-eB-o3b">
                                             <rect key="frame" x="20" y="10" width="280" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -295,6 +299,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afM-ZW-WUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="194" y="725"/>
+        </scene>
+        <!--Buildings View Controller-->
+        <scene sceneID="lDd-Jw-yFR">
+            <objects>
+                <viewController storyboardIdentifier="BuildingsViewController" id="HFf-eo-vw1" customClass="BuildingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BDd-Zl-2TS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pJk-BD-77P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="em1-T7-6bH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztT-cF-GfE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ztT-cF-GfE" id="Elv-E1-IEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTy-Ze-9bY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="1446"/>
         </scene>
         <!--Side Weather View Controller-->
         <scene sceneID="xuK-li-BQf">

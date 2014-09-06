@@ -25,7 +25,7 @@
                                                 attributes:attributes
                                                    context:NULL];
     
-    return TotalTopAndBottomPadding + TimeTopSpace + 12 + 17 + boundingRect.size.height;
+    return TotalTopAndBottomPadding + TimeTopSpace + 12 + 18 + boundingRect.size.height;
 }
 
 - (void)configureWithNews:(UWNews *)news {

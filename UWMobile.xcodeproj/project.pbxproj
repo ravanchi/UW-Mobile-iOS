@@ -40,6 +40,9 @@
 		41B8806F19B4FB9A00C7C2CE /* SideWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8806E19B4FB9A00C7C2CE /* SideWeatherViewController.m */; };
 		41B8807219B5028C00C7C2CE /* UWWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8807119B5028C00C7C2CE /* UWWeather.m */; };
 		41B8807519BA745300C7C2CE /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8807419BA745300C7C2CE /* NewsDetailsViewController.m */; };
+		41B8807819BAB06200C7C2CE /* BuildingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8807719BAB06200C7C2CE /* BuildingsViewController.m */; };
+		41B8807A19BAB1A100C7C2CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B8807919BAB1A100C7C2CE /* MapKit.framework */; };
+		41B8807D19BAC73A00C7C2CE /* UWBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8807C19BAC73A00C7C2CE /* UWBuilding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,11 @@
 		41B8807119B5028C00C7C2CE /* UWWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWWeather.m; sourceTree = "<group>"; };
 		41B8807319BA745300C7C2CE /* NewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailsViewController.h; sourceTree = "<group>"; };
 		41B8807419BA745300C7C2CE /* NewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsViewController.m; sourceTree = "<group>"; };
+		41B8807619BAB06200C7C2CE /* BuildingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingsViewController.h; sourceTree = "<group>"; };
+		41B8807719BAB06200C7C2CE /* BuildingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingsViewController.m; sourceTree = "<group>"; };
+		41B8807919BAB1A100C7C2CE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		41B8807B19BAC73A00C7C2CE /* UWBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWBuilding.h; sourceTree = "<group>"; };
+		41B8807C19BAC73A00C7C2CE /* UWBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWBuilding.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B8807A19BAB1A100C7C2CE /* MapKit.framework in Frameworks */,
 				41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */,
 				41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */,
 				41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */,
@@ -159,6 +168,7 @@
 		41B87FD719B0251C00C7C2CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41B8807919BAB1A100C7C2CE /* MapKit.framework */,
 				41B87FD819B0251C00C7C2CE /* Foundation.framework */,
 				41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */,
 				41B87FDC19B0251C00C7C2CE /* UIKit.framework */,
@@ -238,6 +248,8 @@
 				41B8801D19B27C4B00C7C2CE /* UWEventTimes.m */,
 				41B8807019B5028C00C7C2CE /* UWWeather.h */,
 				41B8807119B5028C00C7C2CE /* UWWeather.m */,
+				41B8807B19BAC73A00C7C2CE /* UWBuilding.h */,
+				41B8807C19BAC73A00C7C2CE /* UWBuilding.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -259,6 +271,8 @@
 				41B8806819B31A5000C7C2CE /* EventsViewController.m */,
 				41B8807319BA745300C7C2CE /* NewsDetailsViewController.h */,
 				41B8807419BA745300C7C2CE /* NewsDetailsViewController.m */,
+				41B8807619BAB06200C7C2CE /* BuildingsViewController.h */,
+				41B8807719BAB06200C7C2CE /* BuildingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +434,7 @@
 				41B8802C19B2DA5D00C7C2CE /* DateProvider.m in Sources */,
 				41B8806F19B4FB9A00C7C2CE /* SideWeatherViewController.m in Sources */,
 				41B8806319B3119400C7C2CE /* UWSideMenuItem.m in Sources */,
+				41B8807D19BAC73A00C7C2CE /* UWBuilding.m in Sources */,
 				41B87FF219B0251C00C7C2CE /* NewsViewController.m in Sources */,
 				41B8807219B5028C00C7C2CE /* UWWeather.m in Sources */,
 				41B8801B19B0A96600C7C2CE /* UWEvent.m in Sources */,
@@ -429,6 +444,7 @@
 				41B8802919B2D80500C7C2CE /* UWNews.m in Sources */,
 				41B87FE519B0251C00C7C2CE /* main.m in Sources */,
 				41B8801E19B27C4B00C7C2CE /* UWEventTimes.m in Sources */,
+				41B8807819BAB06200C7C2CE /* BuildingsViewController.m in Sources */,
 				41B8807519BA745300C7C2CE /* NewsDetailsViewController.m in Sources */,
 				41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */,
 				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,

@@ -6,6 +6,7 @@
 #import "UWEventTimes.h"
 #import "UWNews.h"
 #import "UWWeather.h"
+#import "UWBuilding.h"
 
 #import "SplashScreenViewController.h"
 
@@ -13,6 +14,7 @@ const NSString *apiKey = @"624b3a3eab10f59832f55b39f6900947";
 const NSString *eventsUrl = @"https://api.uwaterloo.ca/v2/events.json";
 const NSString *newsUrl = @"https://api.uwaterloo.ca/v2/news.json";
 const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json";
+const NSString *buildingUrl = @"https://api.uwaterloo.ca/v2/buildings/list.json";
 
 @interface AppDelegate()
 
@@ -28,6 +30,7 @@ const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json"
     [self fetchNews];
     [self fetchEvents];
     [self fetchWeather];
+    [self fetchBuildings];
     return YES;
 }
 
@@ -58,32 +61,28 @@ const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json"
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)fetchNews {
+- (void)fetchBuildings {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    NSString *newsStringUrl = [NSString stringWithFormat:@"%@?key=%@", newsUrl, apiKey];
+    NSString *buildingsStringUrl = [NSString stringWithFormat:@"%@?key=%@", buildingUrl, apiKey];
     
-    [manager GET:newsStringUrl
+    [manager GET:buildingsStringUrl
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-             NSArray *newsJSON = responseDictionary[@"data"];
+             NSArray *buildingsJSON = responseDictionary[@"data"];
              
              NSError *error;
              
-             NSArray *newsData = [MTLJSONAdapter modelsOfClass:[UWNews class] fromJSONArray:newsJSON error:&error];
+             NSArray *buildingsData = [MTLJSONAdapter modelsOfClass:[UWBuilding class] fromJSONArray:buildingsJSON error:&error];
              
              if (error) {
-                 NSLog(@"Couldn't convert News JSON to UWNews models: %@", error);
+                 NSLog(@"Couldn't convert News JSON to UWBuilding models: %@", error);
              }
              
-             NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"published" ascending:NO];
+             NSLog(@"%@", buildingsData);
              
-             newsData = [newsData sortedArrayUsingDescriptors:@[descriptor]];
-             
-             NSLog(@"%@", newsData);
-             
-             self.news = newsData;
+             self.buildings = buildingsData;
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
@@ -125,7 +124,7 @@ const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json"
                  return (NSComparisonResult)NSOrderedSame;
              }];
              
-             NSLog(@"%@", eventData);
+//             NSLog(@"%@", eventData);
              
              self.events = eventData;
          }
@@ -154,10 +153,42 @@ const NSString *weatherUrl = @"https://api.uwaterloo.ca/v2/weather/current.json"
              }
              
              
-             NSLog(@"%@", weatherData);
+//             NSLog(@"%@", weatherData);
              
              self.weather = (UWWeather *)weatherData;
              [self.splashScreen proceedToHomeViewController];
+         }
+         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
+}
+
+- (void)fetchNews {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSString *newsStringUrl = [NSString stringWithFormat:@"%@?key=%@", newsUrl, apiKey];
+    
+    [manager GET:newsStringUrl
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+             NSArray *newsJSON = responseDictionary[@"data"];
+             
+             NSError *error;
+             
+             NSArray *newsData = [MTLJSONAdapter modelsOfClass:[UWNews class] fromJSONArray:newsJSON error:&error];
+             
+             if (error) {
+                 NSLog(@"Couldn't convert News JSON to UWNews models: %@", error);
+             }
+             
+             NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"published" ascending:NO];
+             
+             newsData = [newsData sortedArrayUsingDescriptors:@[descriptor]];
+             
+             //             NSLog(@"%@", newsData);
+             
+             self.news = newsData;
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
