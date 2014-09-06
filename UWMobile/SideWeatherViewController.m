@@ -30,14 +30,14 @@
 }
 
 - (void)setUpHumidityLabel:(CGFloat)humidity {
-    NSString *descriptionLabel = @"Humidity %@";
+    NSString *descriptionLabel = @"Humidity %@%%";
     NSString *humidityString = [NSString stringWithFormat:@"%.1f", humidity];
     NSString *fullHumidityString = [NSString stringWithFormat:descriptionLabel, humidityString];
     NSMutableAttributedString *attributedHumidityString = [[NSMutableAttributedString alloc] initWithString:fullHumidityString attributes:nil];
     
     [attributedHumidityString beginEditing];
     [attributedHumidityString addAttribute:NSForegroundColorAttributeName
-                                 value:[UIColor grayColor]
+                                 value:[UIColor darkGrayColor]
                                  range:NSMakeRange(0, 8)];
     
     [attributedHumidityString addAttribute:NSFontAttributeName
@@ -49,19 +49,24 @@
 }
 
 - (void)setUpWindSpeedLabel:(CGFloat)windSpeed {
-    NSString *descriptionLabel = @"Wind Speed %@";
+    NSString *descriptionLabel = @"Wind Speed %@ km/h";
     NSString *windSpeedString = [NSString stringWithFormat:@"%.1f", windSpeed];
     NSString *fullWindSpeedString = [NSString stringWithFormat:descriptionLabel, windSpeedString];
     NSMutableAttributedString *attributedHumidityString = [[NSMutableAttributedString alloc] initWithString:fullWindSpeedString attributes:nil];
     
     [attributedHumidityString beginEditing];
     [attributedHumidityString addAttribute:NSForegroundColorAttributeName
-                                     value:[UIColor grayColor]
+                                     value:[UIColor darkGrayColor]
                                      range:NSMakeRange(0, 10)];
     
     [attributedHumidityString addAttribute:NSFontAttributeName
                                      value:[UIFont systemFontOfSize:11]
                                      range:NSMakeRange(0, 10)];
+    
+    [attributedHumidityString addAttribute:NSFontAttributeName
+                                     value:[UIFont systemFontOfSize:13]
+                                     range:[fullWindSpeedString rangeOfString:@"km/h"]];
+    
     [attributedHumidityString endEditing];
     
     self.windSpeedLabel.attributedText = attributedHumidityString;

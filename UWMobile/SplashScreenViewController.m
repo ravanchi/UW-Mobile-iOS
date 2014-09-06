@@ -18,8 +18,8 @@
     RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
                                                                     leftMenuViewController:leftMenuViewController
                                                                    rightMenuViewController:nil];
-
-    sideMenuViewController.view.backgroundColor = [UIColor whiteColor];
+    
+    [sideMenuViewController.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"side_menu_bg.png"]]];
     sideMenuViewController.contentViewInPortraitOffsetCenterX = 30;
     sideMenuViewController.contentViewScaleValue = 0.85;
     sideMenuViewController.interactivePopGestureRecognizerEnabled = NO;

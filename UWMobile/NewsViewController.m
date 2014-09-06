@@ -1,4 +1,5 @@
 #import "NewsViewController.h"
+#import "NewsDetailsViewController.h"
 #import "NewsCell.h"
 
 #import "AppDelegate.h"
@@ -8,6 +9,7 @@ static NSString *const kNewsTitle = @"News";
 @interface NewsViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) AppDelegate *appDelegate;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -43,6 +45,19 @@ static NSString *const kNewsTitle = @"News";
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     UWNews *news = self.appDelegate.news[indexPath.row];
     return CGSizeMake(CGRectGetWidth(collectionView.frame), [NewsCell heightWithNews:news]);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    
+    if ([segue.identifier isEqualToString:@"ShowNewsDetails"]) {
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:YES];
+        
+        UWNews *news = self.appDelegate.news[indexPath.row];
+        NewsDetailsViewController *detailsViewController = [segue destinationViewController];
+        [detailsViewController configureWithNews:news];
+    }
 }
 
 @end
