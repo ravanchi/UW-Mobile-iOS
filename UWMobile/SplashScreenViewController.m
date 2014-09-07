@@ -19,10 +19,16 @@
                                                                     leftMenuViewController:leftMenuViewController
                                                                    rightMenuViewController:nil];
     
-    [sideMenuViewController.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"side_menu_bg.png"]]];
-    sideMenuViewController.contentViewInPortraitOffsetCenterX = 30;
-    sideMenuViewController.contentViewScaleValue = 0.85;
+    [sideMenuViewController.view setBackgroundColor:[UIColor colorWithRed:(51/255.0) green:(51/255.0) blue:(51/255.0) alpha:0.95]];
+    sideMenuViewController.contentViewInPortraitOffsetCenterX = 54;
+    sideMenuViewController.contentViewScaleValue = 1;
     sideMenuViewController.interactivePopGestureRecognizerEnabled = NO;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+    sideMenuViewController.contentViewShadowOpacity = 1.0f;
+    sideMenuViewController.contentViewShadowRadius = 5.0f;
+    sideMenuViewController.menuPreferredStatusBarStyle = UIStatusBarStyleLightContent;
+    sideMenuViewController.bouncesHorizontally = NO;
     self.view.window.rootViewController = sideMenuViewController;
 }
 

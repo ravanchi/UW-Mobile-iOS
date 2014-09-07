@@ -44,6 +44,7 @@
 		41B8807A19BAB1A100C7C2CE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B8807919BAB1A100C7C2CE /* MapKit.framework */; };
 		41B8807D19BAC73A00C7C2CE /* UWBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8807C19BAC73A00C7C2CE /* UWBuilding.m */; };
 		41FA7F1219BADB1B00149FA3 /* UWGoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FA7F1119BADB1B00149FA3 /* UWGoose.m */; };
+		41FA7F1519BC452C00149FA3 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FA7F1419BC452C00149FA3 /* BaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		41B8807C19BAC73A00C7C2CE /* UWBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWBuilding.m; sourceTree = "<group>"; };
 		41FA7F1019BADB1B00149FA3 /* UWGoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWGoose.h; sourceTree = "<group>"; };
 		41FA7F1119BADB1B00149FA3 /* UWGoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWGoose.m; sourceTree = "<group>"; };
+		41FA7F1319BC452C00149FA3 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		41FA7F1419BC452C00149FA3 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		9B28D77A6302458C8CDF52A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F689589E4AF6409EA41E3B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -264,6 +267,8 @@
 			children = (
 				41B8805E19B30B2700C7C2CE /* BaseViewController.h */,
 				41B8805F19B30B2700C7C2CE /* BaseViewController.m */,
+				41FA7F1319BC452C00149FA3 /* BaseNavigationController.h */,
+				41FA7F1419BC452C00149FA3 /* BaseNavigationController.m */,
 				41B8801F19B2C76100C7C2CE /* SplashScreenViewController.h */,
 				41B8802019B2C76100C7C2CE /* SplashScreenViewController.m */,
 				41B8805819B2F03200C7C2CE /* LeftMenuViewController.h */,
@@ -453,6 +458,7 @@
 				41B8807819BAB06200C7C2CE /* BuildingsViewController.m in Sources */,
 				41B8807519BA745300C7C2CE /* NewsDetailsViewController.m in Sources */,
 				41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */,
+				41FA7F1519BC452C00149FA3 /* BaseNavigationController.m in Sources */,
 				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
