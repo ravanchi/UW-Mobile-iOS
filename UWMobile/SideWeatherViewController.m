@@ -37,7 +37,7 @@
     
     [attributedHumidityString beginEditing];
     [attributedHumidityString addAttribute:NSForegroundColorAttributeName
-                                 value:[UIColor darkGrayColor]
+                                 value:[UIColor whiteColor]
                                  range:NSMakeRange(0, 8)];
     
     [attributedHumidityString addAttribute:NSFontAttributeName
@@ -56,7 +56,7 @@
     
     [attributedHumidityString beginEditing];
     [attributedHumidityString addAttribute:NSForegroundColorAttributeName
-                                     value:[UIColor darkGrayColor]
+                                     value:[UIColor whiteColor]
                                      range:NSMakeRange(0, 10)];
     
     [attributedHumidityString addAttribute:NSFontAttributeName
