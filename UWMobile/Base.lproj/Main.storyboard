@@ -45,6 +45,7 @@
                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-7s-2fR">
                                 <rect key="frame" x="0.0" y="0.0" width="214" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                 <containerView key="tableHeaderView" contentMode="scaleToFill" id="6De-S7-3Tl">
                                     <rect key="frame" x="0.0" y="0.0" width="214" height="97"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,8 +61,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="214" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hT0-ct-1tB">
+                                                    <rect key="frame" x="25" y="12" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="gCn-7S-dyx"/>
+                                                        <constraint firstAttribute="height" constant="20" id="pp3-rU-MWw"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gz5-hG-Pf1">
-                                                    <rect key="frame" x="25" y="13" width="38" height="18"/>
+                                                    <rect key="frame" x="55" y="13" width="38" height="18"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,11 +78,14 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gz5-hG-Pf1" firstAttribute="leading" secondItem="ONI-m8-CWQ" secondAttribute="leading" constant="25" id="Qsx-uJ-WhL"/>
+                                                <constraint firstItem="gz5-hG-Pf1" firstAttribute="leading" secondItem="hT0-ct-1tB" secondAttribute="trailing" constant="10" id="QEF-Y2-aws"/>
                                                 <constraint firstAttribute="centerY" secondItem="gz5-hG-Pf1" secondAttribute="centerY" id="jQL-wM-CMu"/>
+                                                <constraint firstAttribute="centerY" secondItem="hT0-ct-1tB" secondAttribute="centerY" id="l1j-t6-s9P"/>
+                                                <constraint firstItem="hT0-ct-1tB" firstAttribute="leading" secondItem="ONI-m8-CWQ" secondAttribute="leading" constant="25" id="lN1-GC-ny1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="icon" destination="hT0-ct-1tB" id="L02-ES-bTh"/>
                                             <outlet property="nameLabel" destination="gz5-hG-Pf1" id="zFb-nh-v7q"/>
                                         </connections>
                                     </tableViewCell>
@@ -102,13 +114,12 @@
         <!--Base Navigation Controller-->
         <scene sceneID="Gt7-PZ-31t">
             <objects>
-                <navigationController storyboardIdentifier="NewsNavigationController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dqe-K0-5Qc" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="3iF-WH-J1U">
+                <navigationController storyboardIdentifier="NewsNavigationController" definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dqe-K0-5Qc" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3iF-WH-J1U">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.98823535442352295" green="0.9803922176361084" blue="0.019607843831181526" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="barTintColor" red="0.17254901960784313" green="0.1764705882352941" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.22745098039215686" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -213,15 +224,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-h7-RQf" userLabel="BackgroundWebView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" calendarEvent="YES"/>
                             </webView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" paginationBreakingMode="column" pageLength="2" translatesAutoresizingMaskIntoConstraints="NO" id="jfu-58-vQL" userLabel="MainWebView">
+                            <webView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" suppressesIncrementalRendering="YES" paginationBreakingMode="column" pageLength="2" translatesAutoresizingMaskIntoConstraints="NO" id="jfu-58-vQL" userLabel="MainWebView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES" calendarEvent="YES"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -315,7 +326,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztT-cF-GfE">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztT-cF-GfE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>

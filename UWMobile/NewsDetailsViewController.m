@@ -21,16 +21,26 @@ static NSString *const kNewsDetailsTitle = @"News Details";
     [super viewDidLoad];
     self.title = kNewsDetailsTitle;
     self.backgroundWebView.delegate = self;
+    self.webView.delegate = self;
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:self.news.link];
     [self.backgroundWebView loadRequest:urlRequest];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSString *contentString = [self.backgroundWebView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName(\"field field-name-body field-type-text-with-summary field-label-hidden\")[0].innerHTML"];
-    
-        contentString =
-        [NSString stringWithFormat:@"<div style=\"position: absolute; top: 0px; left: 30px; right:30px; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; font-size: 30pt; color: #000;\">%@", contentString];
+    if (webView == self.backgroundWebView) {
+        NSString *contentString = [self.backgroundWebView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName(\"field field-name-body field-type-text-with-summary field-label-hidden\")[0].innerHTML"];
+        
+        contentString = [NSString stringWithFormat:@"<style type=\"text/css\">a {text-decoration: none; color:#000;} img {display: none;} button {display: none}</style><div style=\"position: absolute; top: 0px; left: 30px; right:30px; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; font-size: 36pt; color: #000;\">%@", contentString];
+
         [self.webView loadHTMLString:contentString baseURL:self.news.link];
+    }
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+		return NO;
+	}
+	return YES;
 }
 
 @end

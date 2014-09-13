@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initMenuItems];
-    self.selectedCellBGColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.15];
+    self.selectedCellBGColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.15];
     self.defaultCellBGColor = [UIColor clearColor];
 }
 
@@ -43,8 +43,8 @@
 - (void)initMenuItems {
     NSMutableArray *menuItems = [NSMutableArray array];
     
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"side_menu_home_selected" unselectedImageName:@"side_menu_home"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"side_menu_news_selected" unselectedImageName:@"side_menu_news"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"" unselectedImageName:@""]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"" unselectedImageName:@""]];
