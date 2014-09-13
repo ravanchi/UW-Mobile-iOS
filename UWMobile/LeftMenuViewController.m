@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initMenuItems];
-    self.selectedCellBGColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.1];
+    self.selectedCellBGColor = [UIColor colorWithRed:(247.0f/255.0f) green:(247.0f/255.0f) blue:(247.0f/255.0f) alpha:0.15];
     self.defaultCellBGColor = [UIColor clearColor];
 }
 
@@ -75,33 +75,33 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([indexPath compare:self.lastSelectedIndexPath] != NSOrderedSame) {
-        if(indexPath.row == 0) {
-            //
-            //TO-DO
-            //
-        } else if (indexPath.row == 1) {
+        NSInteger MenuItem = indexPath.row;
+        
+        if(MenuItem == HomePage) {
+            
+        } else if (indexPath.row == News) {
             NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:newsViewController, nil];
-        } else if (indexPath.row == 2) {
+        } else if (MenuItem == Events) {
             EventsViewController *eventsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([EventsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:eventsViewController, nil];
-        } else if (indexPath.row == 3) {
+        } else if (MenuItem == InfoSessions) {
           //
           //TO-DO
           //
-        } else if (indexPath.row == 4) {
+        } else if (MenuItem == Buildings) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:NO];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
-        } else if (indexPath.row == 5) {
+        } else if (MenuItem == GooseWatch) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:YES];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
-        } else if (indexPath.row == 6) {
+        } else if (MenuItem == FoodServices) {
             //
             //TO-DO
             //
-        } else if (indexPath.row == 7) {
+        } else if (MenuItem == WatcardLocations) {
             //
             //TO-DO
             //

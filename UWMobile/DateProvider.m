@@ -8,6 +8,7 @@
     
     dispatch_once(&token, ^{
         dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"EST"]];
         [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
     });
     
@@ -20,6 +21,7 @@
     
     dispatch_once(&token, ^{
         dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"EST"]];
         [dateFormatter setDateFormat:@"MMM d, yyyy"];
     });
     
@@ -32,6 +34,7 @@
     
     dispatch_once(&token, ^{
         dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"EST"]];
         [dateFormatter setDateFormat:@"hh:mm aa"];
     });
     
