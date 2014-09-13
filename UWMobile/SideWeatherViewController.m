@@ -26,7 +26,7 @@
     self.temperatureLabel.text = [NSString stringWithFormat:@"%ld", lroundf(weather.currentTemperature)];
     [self setUpHumidityLabel:weather.humidity];
     [self setUpWindSpeedLabel:weather.windSpeed];
-    self.lastUpdatedLabel.text = [NSString stringWithFormat:@"Updated: %@", [[DateProvider displayDateFormat] stringFromDate: weather.observationTime]];
+    self.lastUpdatedLabel.text = [NSString stringWithFormat:@"Updated: %@", [[DateProvider displayHourTimeFormat] stringFromDate: weather.observationTime]];
 }
 
 - (void)setUpHumidityLabel:(CGFloat)humidity {
@@ -64,7 +64,7 @@
                                      range:NSMakeRange(0, 10)];
     
     [attributedHumidityString addAttribute:NSFontAttributeName
-                                     value:[UIFont systemFontOfSize:13]
+                                     value:[UIFont systemFontOfSize:12]
                                      range:[fullWindSpeedString rangeOfString:@"km/h"]];
     
     [attributedHumidityString endEditing];

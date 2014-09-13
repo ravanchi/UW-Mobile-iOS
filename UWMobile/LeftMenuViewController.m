@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initMenuItems];
-    self.selectedCellBGColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.15];
+    self.selectedCellBGColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.1];
     self.defaultCellBGColor = [UIColor clearColor];
 }
 
@@ -45,12 +45,12 @@
     
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"side_menu_home_selected" unselectedImageName:@"side_menu_home"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"side_menu_news_selected" unselectedImageName:@"side_menu_news"]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"" unselectedImageName:@""]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Watcard Locations" selectedImageName:@"" unselectedImageName:@""]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"side_menu_events_selected" unselectedImageName:@"side_menu_events"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"side_menu_info_selected" unselectedImageName:@"side_menu_info"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"side_menu_buildings_selected" unselectedImageName:@"side_menu_buildings"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"side_menu_goose_selected" unselectedImageName:@"side_menu_goose"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"side_menu_food_selected" unselectedImageName:@"side_menu_food"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Watcard Locations" selectedImageName:@"side_menu_watcard_selected" unselectedImageName:@"side_menu_watcard"]];
     
     self.menuItems = menuItems;
 }

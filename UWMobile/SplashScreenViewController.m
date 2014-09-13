@@ -26,7 +26,7 @@
     sideMenuViewController.contentViewShadowEnabled = YES;
     sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
     sideMenuViewController.contentViewShadowOpacity = 1.0f;
-    sideMenuViewController.contentViewShadowRadius = 5.0f;
+    sideMenuViewController.contentViewShadowRadius = 7.0f;
     sideMenuViewController.menuPreferredStatusBarStyle = UIStatusBarStyleLightContent;
     sideMenuViewController.bouncesHorizontally = NO;
     self.view.window.rootViewController = sideMenuViewController;

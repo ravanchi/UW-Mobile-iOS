@@ -26,4 +26,16 @@
     return dateFormatter;
 }
 
++ (NSDateFormatter *)displayHourTimeFormat {
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t token;
+    
+    dispatch_once(&token, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"hh:mm aa"];
+    });
+    
+    return dateFormatter;
+}
+
 @end

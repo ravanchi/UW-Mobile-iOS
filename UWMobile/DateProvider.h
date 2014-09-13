@@ -2,6 +2,7 @@
 
 + (NSDateFormatter *)defaultDateFormat;
 + (NSDateFormatter *)displayDateFormat;
++ (NSDateFormatter *)displayHourTimeFormat;
 
 @end
 
