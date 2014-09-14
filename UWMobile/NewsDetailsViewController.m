@@ -1,7 +1,7 @@
 #import "NewsDetailsViewController.h"
 #import "UWNews.h"
 
-static NSString *const kNewsDetailsTitle = @"News Details";
+static NSString *const kNewsDetailsTitle = @"NEWS DETAILS";
 
 @interface NewsDetailsViewController () <UIWebViewDelegate>
 

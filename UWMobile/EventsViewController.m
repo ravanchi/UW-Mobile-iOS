@@ -3,7 +3,7 @@
 
 #import "AppDelegate.h"
 
-static NSString *const kEventsTitle = @"Events";
+static NSString *const kEventsTitle = @"EVENTS";
 
 @interface EventsViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 

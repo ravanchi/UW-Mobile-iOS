@@ -28,6 +28,12 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    [navigationBar setTintColor:[UIColor whiteColor]];
+    
+    [navigationBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"OpenSans-Bold" size:17.0f],
+                                            NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.splashScreen = (SplashScreenViewController *)self.window.rootViewController;
     [self fetchNews];
     [self fetchEvents];

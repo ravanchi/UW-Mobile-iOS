@@ -17,8 +17,8 @@ static double maxLatitude = 43.479;
 static double uWaterlooLongitude = -80.54382;
 static double uWaterlooLatitude = 43.47076;
 
-static NSString *const kBuildingsTitle = @"Buildings";
-static NSString *const kGooseWatch = @"Goose Watch";
+static NSString *const kBuildingsTitle = @"BUILDINGS";
+static NSString *const kGooseWatch = @"GOOSE WATCH";
 
 @interface BuildingsViewController () <MKMapViewDelegate>
 

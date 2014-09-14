@@ -4,7 +4,7 @@
 
 #import "AppDelegate.h"
 
-static NSString *const kNewsTitle = @"News";
+static NSString *const kNewsTitle = @"NEWS";
 
 @interface NewsViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 

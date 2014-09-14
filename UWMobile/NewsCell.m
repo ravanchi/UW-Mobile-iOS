@@ -3,8 +3,8 @@
 
 #import "DateProvider.h"
 
-#define TotalTopAndBottomPadding (7)
-#define TimeTopSpace (10)
+#define TotalTopAndBottomPadding (10)
+#define TimeTopSpace (2.5)
 #define kMaxWidth (280)
 
 @interface NewsCell()
@@ -17,7 +17,7 @@
 @implementation NewsCell
 
 + (CGFloat)heightWithNews:(UWNews *)news {
-    NSDictionary *attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:17.0f] ,
+    NSDictionary *attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:15.0f] ,
                                  NSForegroundColorAttributeName : [UIColor whiteColor]};
     
     CGRect boundingRect = [news.title boundingRectWithSize:CGSizeMake(kMaxWidth, 8000)
@@ -25,7 +25,7 @@
                                                 attributes:attributes
                                                    context:NULL];
     
-    return TotalTopAndBottomPadding + TimeTopSpace + 12 + 18 + boundingRect.size.height;
+    return TotalTopAndBottomPadding + TimeTopSpace + 12 + 15 + 1 + boundingRect.size.height;
 }
 
 - (void)configureWithNews:(UWNews *)news {

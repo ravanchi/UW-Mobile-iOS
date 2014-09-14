@@ -156,22 +156,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-eB-o3b">
-                                            <rect key="frame" x="20" y="10" width="280" height="21"/>
+                                            <rect key="frame" x="20" y="10" width="280" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimeLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trg-kx-GDl">
-                                            <rect key="frame" x="20" y="41" width="280" height="15"/>
+                                            <rect key="frame" x="20" y="33" width="280" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlT-tB-WeV" userLabel="ThinHorizontalLine" customClass="ThinHorizontalLineView">
-                                            <rect key="frame" x="1" y="65" width="318" height="2"/>
+                                            <rect key="frame" x="20" y="67" width="300" height="1"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="KQR-a5-CSn"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -179,14 +182,13 @@
                                 <constraints>
                                     <constraint firstItem="trg-kx-GDl" firstAttribute="leading" secondItem="kC0-61-S47" secondAttribute="leading" constant="20" id="5lR-6s-cps"/>
                                     <constraint firstAttribute="trailing" secondItem="trg-kx-GDl" secondAttribute="trailing" constant="20" id="L0A-8c-8DY"/>
-                                    <constraint firstItem="zlT-tB-WeV" firstAttribute="top" secondItem="trg-kx-GDl" secondAttribute="bottom" constant="9" id="LdN-1z-jy5"/>
-                                    <constraint firstAttribute="trailing" secondItem="zlT-tB-WeV" secondAttribute="trailing" constant="1" id="Nev-7V-mxN"/>
+                                    <constraint firstAttribute="trailing" secondItem="zlT-tB-WeV" secondAttribute="trailing" id="Nev-7V-mxN"/>
                                     <constraint firstItem="19Y-eB-o3b" firstAttribute="leading" secondItem="kC0-61-S47" secondAttribute="leading" constant="20" id="SrJ-X5-nhc"/>
                                     <constraint firstAttribute="trailing" secondItem="19Y-eB-o3b" secondAttribute="trailing" constant="20" id="b3C-54-0KH"/>
-                                    <constraint firstAttribute="bottom" secondItem="zlT-tB-WeV" secondAttribute="bottom" constant="1" id="bZl-lX-VuQ"/>
-                                    <constraint firstItem="zlT-tB-WeV" firstAttribute="leading" secondItem="kC0-61-S47" secondAttribute="leading" constant="1" id="fJi-vr-Emc"/>
+                                    <constraint firstAttribute="bottom" secondItem="zlT-tB-WeV" secondAttribute="bottom" id="bZl-lX-VuQ"/>
+                                    <constraint firstItem="zlT-tB-WeV" firstAttribute="leading" secondItem="kC0-61-S47" secondAttribute="leading" constant="20" id="fJi-vr-Emc"/>
                                     <constraint firstItem="19Y-eB-o3b" firstAttribute="top" secondItem="kC0-61-S47" secondAttribute="top" constant="10" id="q9m-Au-Ln7"/>
-                                    <constraint firstItem="trg-kx-GDl" firstAttribute="top" secondItem="19Y-eB-o3b" secondAttribute="bottom" constant="10" id="sXI-yM-1id"/>
+                                    <constraint firstItem="trg-kx-GDl" firstAttribute="top" secondItem="19Y-eB-o3b" secondAttribute="bottom" constant="5" id="sXI-yM-1id"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="timeLabel" destination="trg-kx-GDl" id="BzW-Gc-Jct"/>
@@ -273,7 +275,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-ci-n1O" customClass="ThinHorizontalLineView">
-                                            <rect key="frame" x="0.0" y="64" width="320" height="1"/>
+                                            <rect key="frame" x="20" y="64" width="300" height="1"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -399,7 +401,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag4-9C-l8T" userLabel="lastUpdatedLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag4-9C-l8T" userLabel="lastUpdatedLabel">
                                         <rect key="frame" x="0.0" y="39" width="127" height="11"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>

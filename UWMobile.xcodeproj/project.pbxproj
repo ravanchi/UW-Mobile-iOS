@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		288B979BF1254A82B5088717 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F689589E4AF6409EA41E3B5C /* libPods.a */; };
+		41825DC619C4FA3D00FF8663 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41825DBC19C4FA3D00FF8663 /* OpenSans-Bold.ttf */; };
 		41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
 		41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */; };
 		41B87FDD19B0251C00C7C2CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDC19B0251C00C7C2CE /* UIKit.framework */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41825DBC19C4FA3D00FF8663 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		41B87FD519B0251C00C7C2CE /* UWMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B87FD819B0251C00C7C2CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -151,6 +153,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41825DBA19C4FA0F00FF8663 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				41825DBB19C4FA1600FF8663 /* Open Sans */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		41825DBB19C4FA1600FF8663 /* Open Sans */ = {
+			isa = PBXGroup;
+			children = (
+				41825DBC19C4FA3D00FF8663 /* OpenSans-Bold.ttf */,
+			);
+			name = "Open Sans";
+			sourceTree = "<group>";
+		};
 		41B87FCC19B0251C00C7C2CE = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +222,7 @@
 		41B87FDF19B0251C00C7C2CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41825DBA19C4FA0F00FF8663 /* Fonts */,
 				41B8801019B03DF000C7C2CE /* JSON */,
 				41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */,
 				41B87FE119B0251C00C7C2CE /* InfoPlist.strings */,
@@ -383,6 +402,7 @@
 			files = (
 				41B8801419B03F2700C7C2CE /* infosessions.json in Resources */,
 				41B8801219B03E7200C7C2CE /* events.json in Resources */,
+				41825DC619C4FA3D00FF8663 /* OpenSans-Bold.ttf in Resources */,
 				41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */,
 				41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */,
 				41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */,
