@@ -7,6 +7,7 @@ static NSString *const kNewsDetailsTitle = @"NEWS DETAILS";
 
 @property (weak, nonatomic) IBOutlet UIWebView *backgroundWebView;
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 @property (nonatomic, strong) UWNews *news;
 
 @end
@@ -37,6 +38,9 @@ static NSString *const kNewsDetailsTitle = @"NEWS DETAILS";
         contentString = [NSString stringWithFormat:@"<style type=\"text/css\">a {text-decoration: none; color:#000;} img {display: none;} button {display: none}</style><div style=\"position: absolute; top: 0px; left: 30px; right:30px; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; font-size: 36pt; color: #000; background-color: #F4F4F4;\">%@", contentString];
 
         [self.webView loadHTMLString:contentString baseURL:self.news.link];
+    }
+    else {
+        self.loadingIndicator.hidden = YES;
     }
 }
 

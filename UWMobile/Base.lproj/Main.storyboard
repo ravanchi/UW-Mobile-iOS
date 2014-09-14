@@ -258,6 +258,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-hc-pwW" userLabel="loadingIndicator">
+                                <rect key="frame" x="150" y="242" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-h7-RQf" userLabel="BackgroundWebView">
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,6 +275,10 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TCY-hc-pwW" secondAttribute="centerX" id="O7S-ED-diP"/>
+                            <constraint firstAttribute="centerY" secondItem="TCY-hc-pwW" secondAttribute="centerY" id="vLM-yc-OzA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tUq-6U-3Lq">
                         <barButtonItem key="backBarButtonItem" title=" " id="Ktp-YP-wZZ"/>
@@ -278,6 +286,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="backgroundWebView" destination="4tK-h7-RQf" id="yQY-7O-XE4"/>
+                        <outlet property="loadingIndicator" destination="TCY-hc-pwW" id="jNJ-36-00e"/>
                         <outlet property="webView" destination="jfu-58-vQL" id="EZh-8l-7aX"/>
                     </connections>
                 </viewController>
