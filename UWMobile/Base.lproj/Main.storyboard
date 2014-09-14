@@ -76,6 +76,11 @@
                                                     <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apD-K9-xGd">
+                                                    <rect key="frame" x="20" y="43" width="194" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gz5-hG-Pf1" firstAttribute="leading" secondItem="hT0-ct-1tB" secondAttribute="trailing" constant="11" id="QEF-Y2-aws"/>
@@ -111,6 +116,34 @@
             </objects>
             <point key="canvasLocation" x="-250" y="-687"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="1R4-NF-TPt">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="AIx-kO-0MF" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wgi-jw-T06"/>
+                        <viewControllerLayoutGuide type="bottom" id="jch-T7-2XK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FaW-5x-JPF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-35-V6s">
+                                <rect key="frame" x="139" y="273" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pKv-b5-fOR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1w-xa-Jhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="22"/>
+        </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="Gt7-PZ-31t">
             <objects>
@@ -126,7 +159,7 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="UfM-Sw-dCb" kind="relationship" relationship="rootViewController" id="wTP-I9-rqy"/>
+                        <segue destination="AIx-kO-0MF" kind="relationship" relationship="rootViewController" id="rBb-ii-ANd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kch-Xc-jAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,7 +171,7 @@
             <objects>
                 <viewController storyboardIdentifier="NewsViewController" title=" " useStoryboardIdentifierAsRestorationIdentifier="YES" id="UfM-Sw-dCb" userLabel="News View Controller" customClass="NewsViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="rBR-E0-UQH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="zay-KP-zfl">
@@ -211,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpd-ZP-W6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="22"/>
+            <point key="canvasLocation" x="163" y="730"/>
         </scene>
         <!--News Details View Controller -  -->
         <scene sceneID="wCH-50-xjh">
@@ -250,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XvC-Nn-EM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="22"/>
+            <point key="canvasLocation" x="571" y="730"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="pXe-of-H4j">
@@ -314,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afM-ZW-WUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="725"/>
+            <point key="canvasLocation" x="166" y="1433"/>
         </scene>
         <!--Buildings View Controller-->
         <scene sceneID="lDd-Jw-yFR">
@@ -341,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTy-Ze-9bY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="1446"/>
+            <point key="canvasLocation" x="166" y="2154"/>
         </scene>
         <!--Side Weather View Controller-->
         <scene sceneID="xuK-li-BQf">
