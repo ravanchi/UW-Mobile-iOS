@@ -2,7 +2,7 @@
 
 static NSString *const kHomeTitle = @"HOME";
 
-@interface HomeViewController ()
+@interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -11,6 +11,14 @@ static NSString *const kHomeTitle = @"HOME";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = kHomeTitle;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 @end
