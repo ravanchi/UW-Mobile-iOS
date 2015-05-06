@@ -10,29 +10,29 @@
 	<string>UWMobile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6967C925-F7F0-42CD-B13D-51B1A2526A56</key>
+		<key>73C6E94D794EA8B2CACDD1F93220FEC96B1B57CA</key>
 		<string>https://github.com/alirezatr/UW-Mobile-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UWMobile/UWMobile.xcodeproj/project.xcworkspace</string>
+	<string>UWMobile.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6967C925-F7F0-42CD-B13D-51B1A2526A56</key>
-		<string>../../..</string>
+		<key>73C6E94D794EA8B2CACDD1F93220FEC96B1B57CA</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/alirezatr/UW-Mobile-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6967C925-F7F0-42CD-B13D-51B1A2526A56</string>
+	<string>73C6E94D794EA8B2CACDD1F93220FEC96B1B57CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6967C925-F7F0-42CD-B13D-51B1A2526A56</string>
+			<string>73C6E94D794EA8B2CACDD1F93220FEC96B1B57CA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>UW-Mobile-iOS</string>
 		</dict>

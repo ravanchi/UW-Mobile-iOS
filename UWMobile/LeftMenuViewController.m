@@ -1,7 +1,6 @@
 #import "LeftMenuViewController.h"
 #import "UWSideMenuItem.h"
 #import "SideMenuItemCell.h"
-#import "HomeViewController.h"
 #import "NewsViewController.h"
 #import "EventsViewController.h"
 #import "BuildingsViewController.h"
@@ -79,8 +78,6 @@
         NSInteger MenuItem = indexPath.row;
         
         if(MenuItem == HomePage) {
-            HomeViewController *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([HomeViewController class])];
-            ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:homeViewController, nil];
         } else if (indexPath.row == News) {
             NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:newsViewController, nil];

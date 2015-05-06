@@ -20,4 +20,18 @@
     }];
 }
 
+- (void)setNilValueForKey:(NSString*)key
+{
+    if ([key isEqualToString:@"longitude"])
+    {
+        self.longitude = 0.0;
+        return;
+    } else if ([key isEqualToString:@"latitude"]) {
+        self.latitude = 0.0;
+        return;
+    }
+    
+    [super setNilValueForKey:key];
+}
+
 @end
