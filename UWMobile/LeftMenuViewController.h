@@ -1,12 +1,12 @@
 typedef NS_ENUM(NSUInteger, SideMenuItems) {
-    HomePage,
+    //HomePage,
     News,
     Events,
     InfoSessions,
     Buildings,
     GooseWatch,
-    FoodServices,
-    WatcardLocations
+    //FoodServices,
+    //WatcardLocations
 };
 
 @interface LeftMenuViewController : UIViewController

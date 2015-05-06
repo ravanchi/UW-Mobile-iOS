@@ -92,6 +92,9 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
 //             NSLog(@"%@", buildingsData);
              
              self.buildings = buildingsData;
+             if(self.geese != nil && self.weather != nil && self.news != nil && self.events != nil) {
+                 [self.splashScreen proceedToHomeViewController];
+             }
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
@@ -136,6 +139,9 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
 //             NSLog(@"%@", eventData);
              
              self.events = eventData;
+             if(self.geese != nil && self.weather != nil && self.buildings != nil && self.news != nil) {
+                 [self.splashScreen proceedToHomeViewController];
+             }
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
@@ -165,7 +171,9 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
 //             NSLog(@"%@", weatherData);
              
              self.weather = (UWWeather *)weatherData;
-             [self.splashScreen proceedToHomeViewController];
+             if(self.geese != nil && self.news != nil && self.buildings != nil && self.events != nil) {
+                 [self.splashScreen proceedToHomeViewController];
+             }
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
@@ -198,6 +206,9 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
              //             NSLog(@"%@", newsData);
              
              self.news = newsData;
+             if(self.geese != nil && self.weather != nil && self.buildings != nil && self.events != nil) {
+                 [self.splashScreen proceedToHomeViewController];
+             }
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
@@ -226,6 +237,9 @@ const NSString *gooseUrl = @"https://api.uwaterloo.ca/v2/resources/goosewatch.js
              NSLog(@"%@", geeseData);
              
              self.geese = geeseData;
+             if(self.news != nil && self.weather != nil && self.buildings != nil && self.events != nil) {
+                 [self.splashScreen proceedToHomeViewController];
+             }
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);

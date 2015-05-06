@@ -43,14 +43,14 @@
 - (void)initMenuItems {
     NSMutableArray *menuItems = [NSMutableArray array];
     
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"side_menu_home_selected" unselectedImageName:@"side_menu_home"]];
+    //[menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"side_menu_home_selected" unselectedImageName:@"side_menu_home"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"side_menu_news_selected" unselectedImageName:@"side_menu_news"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"side_menu_events_selected" unselectedImageName:@"side_menu_events"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"side_menu_info_selected" unselectedImageName:@"side_menu_info"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"side_menu_buildings_selected" unselectedImageName:@"side_menu_buildings"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"side_menu_goose_selected" unselectedImageName:@"side_menu_goose"]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"side_menu_food_selected" unselectedImageName:@"side_menu_food"]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Watcard Locations" selectedImageName:@"side_menu_watcard_selected" unselectedImageName:@"side_menu_watcard"]];
+    //[menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"side_menu_food_selected" unselectedImageName:@"side_menu_food"]];
+    //[menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Watcard Locations" selectedImageName:@"side_menu_watcard_selected" unselectedImageName:@"side_menu_watcard"]];
     
     self.menuItems = menuItems;
 }
@@ -77,8 +77,10 @@
     if ([indexPath compare:self.lastSelectedIndexPath] != NSOrderedSame) {
         NSInteger MenuItem = indexPath.row;
         
-        if(MenuItem == HomePage) {
-        } else if (indexPath.row == News) {
+        //if(MenuItem == HomePage) {
+        //} else if (indexPath.row == News) {
+        if (indexPath.row == News) {
+        
             NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:newsViewController, nil];
         } else if (MenuItem == Events) {
@@ -96,15 +98,16 @@
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:YES];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:buildingsViewController, nil];
-        } else if (MenuItem == FoodServices) {
-            //
-            //TO-DO
-            //
-        } else if (MenuItem == WatcardLocations) {
-            //
-            //TO-DO
-            //
         }
+//        } else if (MenuItem == FoodServices) {
+//            //
+//            //TO-DO
+//            //
+//        } else if (MenuItem == WatcardLocations) {
+//            //
+//            //TO-DO
+//            //
+//        }
         
         [self.sideMenuViewController setContentViewController:self.sideMenuViewController.contentViewController];
         
