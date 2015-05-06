@@ -46,7 +46,7 @@
     //[menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Home" selectedImageName:@"side_menu_home_selected" unselectedImageName:@"side_menu_home"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"News" selectedImageName:@"side_menu_news_selected" unselectedImageName:@"side_menu_news"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Events" selectedImageName:@"side_menu_events_selected" unselectedImageName:@"side_menu_events"]];
-    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Info Sessions" selectedImageName:@"side_menu_info_selected" unselectedImageName:@"side_menu_info"]];
+    [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Exam Schedule" selectedImageName:@"side_menu_info_selected" unselectedImageName:@"side_menu_info"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Buildings" selectedImageName:@"side_menu_buildings_selected" unselectedImageName:@"side_menu_buildings"]];
     [menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Goose Watch" selectedImageName:@"side_menu_goose_selected" unselectedImageName:@"side_menu_goose"]];
     //[menuItems addObject:[[UWSideMenuItem alloc] initWithName:@"Food Services" selectedImageName:@"side_menu_food_selected" unselectedImageName:@"side_menu_food"]];
@@ -86,7 +86,7 @@
         } else if (MenuItem == Events) {
             EventsViewController *eventsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([EventsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:eventsViewController, nil];
-        } else if (MenuItem == InfoSessions) {
+        } else if (MenuItem == ExamSchedule) {
           //
           //TO-DO
           //

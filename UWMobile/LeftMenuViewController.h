@@ -2,7 +2,7 @@ typedef NS_ENUM(NSUInteger, SideMenuItems) {
     //HomePage,
     News,
     Events,
-    InfoSessions,
+    ExamSchedule,
     Buildings,
     GooseWatch,
     //FoodServices,
