@@ -389,6 +389,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ali Ravanchi";
 				TargetAttributes = {
+					41B87FD419B0251C00C7C2CE = {
+						DevelopmentTeam = 5BLS4CR795;
+					};
 					41B87FF819B0251C00C7C2CE = {
 						TestTargetID = 41B87FD419B0251C00C7C2CE;
 					};
