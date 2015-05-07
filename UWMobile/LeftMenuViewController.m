@@ -4,6 +4,7 @@
 #import "NewsViewController.h"
 #import "EventsViewController.h"
 #import "BuildingsViewController.h"
+#import "ExamScheduleViewController.h"
 
 #import <RESideMenu.h>
 
@@ -80,16 +81,14 @@
         //if(MenuItem == HomePage) {
         //} else if (indexPath.row == News) {
         if (indexPath.row == News) {
-        
             NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([NewsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:newsViewController, nil];
         } else if (MenuItem == Events) {
             EventsViewController *eventsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([EventsViewController class])];
             ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:eventsViewController, nil];
         } else if (MenuItem == ExamSchedule) {
-          //
-          //TO-DO
-          //
+            ExamScheduleViewController *examScheduleViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([ExamScheduleViewController class])];
+            ((UINavigationController *)self.sideMenuViewController.contentViewController).viewControllers = [[NSArray alloc] initWithObjects:examScheduleViewController, nil];
         } else if (MenuItem == Buildings) {
             BuildingsViewController *buildingsViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([BuildingsViewController class])];
             [buildingsViewController isGooseWatch:NO];

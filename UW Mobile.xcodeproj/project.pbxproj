@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		288B979BF1254A82B5088717 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F689589E4AF6409EA41E3B5C /* libPods.a */; };
+		4160F9D51AFA1F810069750F /* ExamScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160F9D41AFA1F810069750F /* ExamScheduleViewController.m */; };
+		4160F9D71AFB13ED0069750F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160F9D61AFB13ED0069750F /* LaunchScreen.xib */; };
 		41825DC619C4FA3D00FF8663 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41825DBC19C4FA3D00FF8663 /* OpenSans-Bold.ttf */; };
 		41B87FD919B0251C00C7C2CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FD819B0251C00C7C2CE /* Foundation.framework */; };
 		41B87FDB19B0251C00C7C2CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */; };
@@ -61,24 +63,27 @@
 /* Begin PBXFileReference section */
 		03E68084D62C9DC87F98F9D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1EAF24D7915C65FC45D75E23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4160F9D31AFA1EC40069750F /* ExamScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExamScheduleViewController.h; sourceTree = "<group>"; };
+		4160F9D41AFA1F810069750F /* ExamScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamScheduleViewController.m; sourceTree = "<group>"; };
+		4160F9D61AFB13ED0069750F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		41825DBC19C4FA3D00FF8663 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		41B87FD519B0251C00C7C2CE /* UWMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B87FD519B0251C00C7C2CE /* UW Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UW Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B87FD819B0251C00C7C2CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41B87FDA19B0251C00C7C2CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		41B87FDC19B0251C00C7C2CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobile-Info.plist"; sourceTree = "<group>"; };
+		41B87FE019B0251C00C7C2CE /* UW Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UW Mobile-Info.plist"; sourceTree = "<group>"; };
 		41B87FE219B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41B87FE419B0251C00C7C2CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41B87FE619B0251C00C7C2CE /* UWMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWMobile-Prefix.pch"; sourceTree = "<group>"; };
+		41B87FE619B0251C00C7C2CE /* UW Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UW Mobile-Prefix.pch"; sourceTree = "<group>"; };
 		41B87FE719B0251C00C7C2CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41B87FE819B0251C00C7C2CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41B87FEB19B0251C00C7C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41B87FF019B0251C00C7C2CE /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		41B87FF119B0251C00C7C2CE /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		41B87FF319B0251C00C7C2CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B87FF919B0251C00C7C2CE /* UW MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UW MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B87FFA19B0251C00C7C2CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWMobileTests-Info.plist"; sourceTree = "<group>"; };
+		41B8800219B0251C00C7C2CE /* UW MobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UW MobileTests-Info.plist"; sourceTree = "<group>"; };
 		41B8800419B0251C00C7C2CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41B8800619B0251C00C7C2CE /* UWMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWMobileTests.m; sourceTree = "<group>"; };
 		41B8801119B03E7200C7C2CE /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
@@ -184,8 +189,8 @@
 		41B87FD619B0251C00C7C2CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41B87FD519B0251C00C7C2CE /* UWMobile.app */,
-				41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */,
+				41B87FD519B0251C00C7C2CE /* UW Mobile.app */,
+				41B87FF919B0251C00C7C2CE /* UW MobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,10 +230,10 @@
 			children = (
 				41825DBA19C4FA0F00FF8663 /* Fonts */,
 				41B8801019B03DF000C7C2CE /* JSON */,
-				41B87FE019B0251C00C7C2CE /* UWMobile-Info.plist */,
+				41B87FE019B0251C00C7C2CE /* UW Mobile-Info.plist */,
 				41B87FE119B0251C00C7C2CE /* InfoPlist.strings */,
 				41B87FE419B0251C00C7C2CE /* main.m */,
-				41B87FE619B0251C00C7C2CE /* UWMobile-Prefix.pch */,
+				41B87FE619B0251C00C7C2CE /* UW Mobile-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,7 +250,7 @@
 		41B8800119B0251C00C7C2CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41B8800219B0251C00C7C2CE /* UWMobileTests-Info.plist */,
+				41B8800219B0251C00C7C2CE /* UW MobileTests-Info.plist */,
 				41B8800319B0251C00C7C2CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -303,6 +308,8 @@
 				41B8807419BA745300C7C2CE /* NewsDetailsViewController.m */,
 				41B8807619BAB06200C7C2CE /* BuildingsViewController.h */,
 				41B8807719BAB06200C7C2CE /* BuildingsViewController.m */,
+				4160F9D31AFA1EC40069750F /* ExamScheduleViewController.h */,
+				4160F9D41AFA1F810069750F /* ExamScheduleViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +317,7 @@
 		41B8802319B2D10F00C7C2CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4160F9D61AFB13ED0069750F /* LaunchScreen.xib */,
 				41B8802419B2D38C00C7C2CE /* NewsCell.h */,
 				41B8802519B2D38C00C7C2CE /* NewsCell.m */,
 				41B8806A19B4DE7200C7C2CE /* EventCell.h */,
@@ -334,9 +342,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41B87FD419B0251C00C7C2CE /* UWMobile */ = {
+		41B87FD419B0251C00C7C2CE /* UW Mobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobile" */;
+			buildConfigurationList = 41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UW Mobile" */;
 			buildPhases = (
 				DE314CBDBF884918B9C995B9 /* Check Pods Manifest.lock */,
 				41B87FD119B0251C00C7C2CE /* Sources */,
@@ -348,14 +356,14 @@
 			);
 			dependencies = (
 			);
-			name = UWMobile;
+			name = "UW Mobile";
 			productName = UWMobile;
-			productReference = 41B87FD519B0251C00C7C2CE /* UWMobile.app */;
+			productReference = 41B87FD519B0251C00C7C2CE /* UW Mobile.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41B87FF819B0251C00C7C2CE /* UWMobileTests */ = {
+		41B87FF819B0251C00C7C2CE /* UW MobileTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobileTests" */;
+			buildConfigurationList = 41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UW MobileTests" */;
 			buildPhases = (
 				41B87FF519B0251C00C7C2CE /* Sources */,
 				41B87FF619B0251C00C7C2CE /* Frameworks */,
@@ -366,9 +374,9 @@
 			dependencies = (
 				41B87FFF19B0251C00C7C2CE /* PBXTargetDependency */,
 			);
-			name = UWMobileTests;
+			name = "UW MobileTests";
 			productName = UWMobileTests;
-			productReference = 41B87FF919B0251C00C7C2CE /* UWMobileTests.xctest */;
+			productReference = 41B87FF919B0251C00C7C2CE /* UW MobileTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -386,8 +394,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UWMobile" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UW Mobile" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -399,8 +407,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41B87FD419B0251C00C7C2CE /* UWMobile */,
-				41B87FF819B0251C00C7C2CE /* UWMobileTests */,
+				41B87FD419B0251C00C7C2CE /* UW Mobile */,
+				41B87FF819B0251C00C7C2CE /* UW MobileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -413,6 +421,7 @@
 				41B8801419B03F2700C7C2CE /* infosessions.json in Resources */,
 				41B8801219B03E7200C7C2CE /* events.json in Resources */,
 				41825DC619C4FA3D00FF8663 /* OpenSans-Bold.ttf in Resources */,
+				4160F9D71AFB13ED0069750F /* LaunchScreen.xib in Resources */,
 				41B87FF419B0251C00C7C2CE /* Images.xcassets in Resources */,
 				41B87FEC19B0251C00C7C2CE /* Main.storyboard in Resources */,
 				41B87FE319B0251C00C7C2CE /* InfoPlist.strings in Resources */,
@@ -489,6 +498,7 @@
 				41B8807519BA745300C7C2CE /* NewsDetailsViewController.m in Sources */,
 				41B8805A19B2F03200C7C2CE /* LeftMenuViewController.m in Sources */,
 				41FA7F1519BC452C00149FA3 /* BaseNavigationController.m in Sources */,
+				4160F9D51AFA1F810069750F /* ExamScheduleViewController.m in Sources */,
 				41B8802119B2C76100C7C2CE /* SplashScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +516,7 @@
 /* Begin PBXTargetDependency section */
 		41B87FFF19B0251C00C7C2CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41B87FD419B0251C00C7C2CE /* UWMobile */;
+			target = 41B87FD419B0251C00C7C2CE /* UW Mobile */;
 			targetProxy = 41B87FFE19B0251C00C7C2CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -619,10 +629,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
-				INFOPLIST_FILE = "UWMobile/UWMobile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "UWMobile/UW Mobile-Prefix.pch";
+				INFOPLIST_FILE = "UWMobile/UW Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "UW Mobile";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -636,10 +646,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
-				INFOPLIST_FILE = "UWMobile/UWMobile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "UWMobile/UW Mobile-Prefix.pch";
+				INFOPLIST_FILE = "UWMobile/UW Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "UW Mobile";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -660,8 +670,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "UWMobileTests/UWMobileTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "UWMobileTests/UW MobileTests-Info.plist";
+				PRODUCT_NAME = "UW MobileTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -678,8 +688,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UWMobile/UWMobile-Prefix.pch";
-				INFOPLIST_FILE = "UWMobileTests/UWMobileTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "UWMobileTests/UW MobileTests-Info.plist";
+				PRODUCT_NAME = "UW MobileTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -688,7 +698,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UWMobile" */ = {
+		41B87FD019B0251C00C7C2CE /* Build configuration list for PBXProject "UW Mobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41B8800819B0251C00C7C2CE /* Debug */,
@@ -697,7 +707,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobile" */ = {
+		41B8800A19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UW Mobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41B8800B19B0251C00C7C2CE /* Debug */,
@@ -706,7 +716,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UWMobileTests" */ = {
+		41B8800D19B0251C00C7C2CE /* Build configuration list for PBXNativeTarget "UW MobileTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41B8800E19B0251C00C7C2CE /* Debug */,

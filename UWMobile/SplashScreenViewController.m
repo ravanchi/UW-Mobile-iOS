@@ -10,6 +10,10 @@
 
 @implementation SplashScreenViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)proceedToHomeViewController {
     UINavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsNavigationController"];
     [navigationController popToRootViewControllerAnimated:NO];

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41B87FD419B0251C00C7C2CE"
-               BuildableName = "UWMobile.app"
-               BlueprintName = "UWMobile"
-               ReferencedContainer = "container:UWMobile.xcodeproj">
+               BuildableName = "UW Mobile.app"
+               BlueprintName = "UW Mobile"
+               ReferencedContainer = "container:UW Mobile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41B87FF819B0251C00C7C2CE"
-               BuildableName = "UWMobileTests.xctest"
-               BlueprintName = "UWMobileTests"
-               ReferencedContainer = "container:UWMobile.xcodeproj">
+               BuildableName = "UW MobileTests.xctest"
+               BlueprintName = "UW MobileTests"
+               ReferencedContainer = "container:UW Mobile.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41B87FD419B0251C00C7C2CE"
-            BuildableName = "UWMobile.app"
-            BlueprintName = "UWMobile"
-            ReferencedContainer = "container:UWMobile.xcodeproj">
+            BuildableName = "UW Mobile.app"
+            BlueprintName = "UW Mobile"
+            ReferencedContainer = "container:UW Mobile.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -58,13 +58,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41B87FD419B0251C00C7C2CE"
-            BuildableName = "UWMobile.app"
-            BlueprintName = "UWMobile"
-            ReferencedContainer = "container:UWMobile.xcodeproj">
+            BuildableName = "UW Mobile.app"
+            BlueprintName = "UW Mobile"
+            ReferencedContainer = "container:UW Mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,13 +77,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41B87FD419B0251C00C7C2CE"
-            BuildableName = "UWMobile.app"
-            BlueprintName = "UWMobile"
-            ReferencedContainer = "container:UWMobile.xcodeproj">
+            BuildableName = "UW Mobile.app"
+            BlueprintName = "UW Mobile"
+            ReferencedContainer = "container:UW Mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
