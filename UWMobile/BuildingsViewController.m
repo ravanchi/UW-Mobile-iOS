@@ -70,13 +70,13 @@ static NSString *const kGooseWatch = @"GOOSE WATCH";
     [super viewDidAppear:animated];
 }
 
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    CLLocationCoordinate2D poiCoordinates = userLocation.location.coordinate;
-    if ((minLatitude < poiCoordinates.latitude < maxLatitude) && (minLongitude < poiCoordinates.longitude < maxLongitude)) {
-        [self setMapViewRegion:userLocation.coordinate];
-    }
-}
+//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+//{
+//    CLLocationCoordinate2D poiCoordinates = userLocation.location.coordinate;
+//    if ((minLatitude < poiCoordinates.latitude < maxLatitude) && (minLongitude < poiCoordinates.longitude < maxLongitude)) {
+//        [self setMapViewRegion:userLocation.coordinate];
+//    }
+//}
 
 - (void)setMapViewRegion:(CLLocationCoordinate2D)poiCoordinates {
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(poiCoordinates, 600, 400);
